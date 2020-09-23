@@ -18,3 +18,52 @@
     margin: 0;
     padding: 0;
 }
+
+
+/***********************************
+Header
+************************************/
+header.header {
+    width: 100%;
+	position: fixed;
+	background:#80808000;
+	color: white;
+}
+.nav-menu-header{
+	padding: 2.5rem 1rem !important;
+}
+
+.nav_menu_content {
+	margin: auto;
+	height: 100%;
+}
+.main_nav_item{
+	display: inline-block;
+	margin-right: 40px;
+}
+.header_logo{
+	
+}
+.nav_list{
+	margin-left: 0;
+    margin-right: 0;
+	margin-bottom: 0px;
+	padding-left: 100px;
+	height: 100%;
+}
+.main_nav_item{
+	position: relative;
+	top:50%;
+}
+.main_nav_item a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 900;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	
+}
+.main_nav_item a:hover{
+	text-decoration: none;
+}
