@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css">
     <!--Main Css-->
     <link rel="stylesheet" href="CSS\style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
       <!--slide nav-->
@@ -64,12 +68,17 @@
     </header>
     </div>
     <!--content-->
-     <div class="content">
-      <div class="owl-carousel owl-theme home_slider">
-        <div class="item"><img src="img/slider/1.jpg"  alt=""></div>
-        <div class="item"><img src="img/slider/6.jpg"  alt=""></div>
-    </div>
-     </div>
+  <div class="home">
+    <div class="home_slider_owl">
+    <div class="owl-carousel owl-theme">
+      <div class="item home_slider_item"><div class="home_slider_background" style="background-image: url(img/slider/10.jpg);" ></div></div>
+      <div class="item home_slider_item"><div class="home_slider_background" style="background-image: url(img/slider/1.jpg);"></div></div>
+  </div>
+  </div>
+</div>
+
+			
+			
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js\jquery-3.5.1.min.js"></script>
@@ -80,21 +89,8 @@
     <script src="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js"></script>
     <script src="JS/custom.js"></script>
     <script>
-   $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+  
+
+  
 </script>
 </html>
