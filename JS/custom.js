@@ -6,7 +6,7 @@ Slider
 $('.owl-carousel').owlCarousel({
     navigation : true,
     singleItem : true,
-    transitionStyle : "fade",
+    animateOut: 'fadeOut',
     dots:false,
     loop:true,
     nav:true,
