@@ -197,7 +197,7 @@ Slider
 
 	/* opacity:0.5; */
 }
- .owl-carousel .owl-nav button[type=button] {
+.owl-carousel .owl-nav button[type=button] {
 	height: 25px;
 	width: 25px;
 	background: #ffffff;
@@ -223,10 +223,6 @@ Slider
 	transition: 1;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
 li {
 	list-style: none;
@@ -234,10 +230,8 @@ li {
 
 /* footer */
 
-.content-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+ .content-footer {
+    
     width: 100%;
     padding: 90px 20px 90px 80px;
     background: #1B1B1B;
@@ -263,14 +257,6 @@ li {
 	margin: 0 auto;
 	position: relative;
 	z-index: 2;
-}
-	
-.container {
-    max-width: 1224px;
-    width: 92%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
 }
 
 
@@ -317,7 +303,7 @@ li {
     margin-bottom: 20px;
 }
 
-.footer-logo p {
+.footer-logo h3 {
     max-width: 300px;
 }
 
@@ -337,7 +323,7 @@ li {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
+} 
 
 
 
