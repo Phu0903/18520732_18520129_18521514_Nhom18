@@ -198,13 +198,14 @@ Slider
 	/* opacity:0.5; */
 }
  .owl-carousel .owl-nav button[type=button] {
-	height: 25px;
-	width: 25px;
-	background: #ffffff;
-	color: #000000;
+	height: 35px;
+	width: 35px;
+	background:#80808000;
+	color: #ffffff;
 	text-align: center;
     line-height: 20px;
-	border-radius: 10% ;
+	border-radius: 50% ;
+	border: 2px solid rgb(255, 255, 255);
 	font-size: 15px;
 	position: absolute;
 	left: 100px;
@@ -212,7 +213,8 @@ Slider
 	z-index: 11;
 	transform: translateY(-15px);
 	opacity: 0;
-	transition: 1s;
+	transition: 0.5s;
+	outline-style: none;
 }
 .owl-carousel .owl-nav button[type=button].owl-next {
 	left: auto;
@@ -220,18 +222,10 @@ Slider
 }
 .owl-carousel:hover .owl-nav button[type=button] {
 	opacity: 1;
-	transition: 1;
-}
+	transition: 0.5s;
+	background: #80808000;
 
-*{
-    margin: 0;
-    padding: 0;
 }
-
-li {
-	list-style: none;
-}
-
 /* footer */
 
 .content-footer {
@@ -257,13 +251,7 @@ li {
         opacity: 0.2;
 	}
 
-.container {
-	max-width: 1224px;
-	width: 92%;
-	margin: 0 auto;
-	position: relative;
-	z-index: 2;
-}
+
 	
 .container {
     max-width: 1224px;
@@ -337,6 +325,8 @@ li {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+
 }
 
 
