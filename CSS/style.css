@@ -270,17 +270,8 @@ Slider
 	margin: 0 auto;
 	position: relative;
 	z-index: 2;
-=======
-
-	
-.container {
-    max-width: 1224px;
-    width: 92%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
->>>>>>> a1ddc4de62e14bc88cbfb359ef2915d339e92517
 }
+
 
 
 .footer-item {
@@ -346,9 +337,8 @@ Slider
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
-<<<<<<< HEAD
 } 
-=======
+
 
 
 }
