@@ -87,7 +87,7 @@ header.header {
 	font-size: 13px;
 	line-height: 36px;
 	font-weight: 600;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .user_box_login
 {
@@ -98,7 +98,7 @@ header.header {
 	display: block;
     position: absolute;
     top: 12px;
-    right: 339px;
+    right: 180px;
     background: #FFFFFF;
     width: 2px;
     height: 11px;
@@ -107,6 +107,7 @@ header.header {
 
 .nav-menu-header{
 	padding: 2.5rem 1rem !important;
+	background: #00000040
 }
 
 .nav_menu_content {
@@ -146,7 +147,7 @@ header.header {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-weight: 900;
-	color: #FFFFFF;
+	color: rgb(241, 241, 241);
 	text-transform: uppercase;
 
 	
@@ -226,6 +227,14 @@ Slider
 	background: #80808000;
 
 }
+.home_slider_content {
+position: absolute;
+top:50%;
+left: 40%;
+color: white;
+
+}
+
 /* footer */
 
  .content-footer {
