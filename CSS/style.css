@@ -98,7 +98,7 @@ header.header {
 	display: block;
     position: absolute;
     top: 12px;
-    right: 180px;
+    right: 330px;
     background: #FFFFFF;
     width: 2px;
     height: 11px;
@@ -270,7 +270,7 @@ color: white;
 }
 
 .col-md-6 .footer-item {
-	margin-left: 120px;
+	margin-left: 0px;
 }
 
 .footer-item {
