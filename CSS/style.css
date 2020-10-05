@@ -45,7 +45,12 @@ header.header {
     display: inline-block;
     margin-right: 36px;
     font-size: 13px;
-    line-height: 36px;
+	line-height: 36px;
+
+}
+.phone a{
+	color: #ffffff;
+	text-decoration: none;
 }
 .social{
 	margin-right: 50%;
