@@ -350,13 +350,31 @@ color: white;
 	line-height: 53px;
 	padding-left: 56px;
 	padding-right: 56px;
-	background: linear-gradient(to right, #030003 5%, #dddddd 100%);;
+	background:  linear-gradient(to left, black, #6817ff);
+	z-index: 10;
 	transform: translateY(15px);
 	border-radius: 29px;
 	outline: none;
 	cursor: pointer;
 	outline-style: none !important;
 	border: none !important;
+	transition: 0.5s;
+}
+.search_button:hover{
+	background: linear-gradient(to right, #dddddd 100%, #050005 5%);
+	color: black;
+	transition: 0.5s;
+}
+/*colorlib-services*/
+.services{
+	padding: 7em 2em;
+}
+.flaticon-around{
+	font-size: 16px;
+}
+.flaticon-around img{
+	height: 90px;
+	width: 90px;
 }
 
 
