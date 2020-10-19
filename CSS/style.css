@@ -367,14 +367,30 @@ color: white;
 }
 /*colorlib-services*/
 .services{
-	padding: 7em 2em;
+	padding: 2em 2em;
 }
 .flaticon-around{
 	font-size: 16px;
+	text-align: center;
 }
-.flaticon-around img{
-	height: 90px;
-	width: 90px;
+.services h3,.services p{
+   text-align: center;
+}
+.flaticon-around img {
+    
+    height: 90px;
+    width: 90px;
+}
+
+/*Most Popular Destination*/
+.block-5{
+	overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    position: relative;
+    display: block;
 }
 
 
