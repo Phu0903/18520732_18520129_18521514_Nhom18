@@ -383,15 +383,68 @@ color: white;
 }
 
 /*Most Popular Destination*/
+.Destination_section{
+	width: 100%;
+}
+.col-des-gallery{
+	position: relative;
+}
 .block-5{
-	overflow: hidden;
+ list-style: none;
+  position: relative;
+}
+.block-5:before{
+	content:'';
+	display: block;
+	
+}
+.card__background{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 400px;
-    position: relative;
-    display: block;
+	height: 400px;
+	width: 350px;
+	margin: auto;
+	margin-top: 20px;
+	list-style: none;
+	position: relative;
+	background-position: center;
+	border-radius: 24px;
+	filter: brightness(0.75) saturate(1.2) contrast(0.85);
+	transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+	transform 200ms linear;
+
+	
+	
+	
+	
 }
+.block-5:hover .card__background{
+	transform: scale(1.05) translateZ(0);
+}
+.card__background:hover > .block-5:not(:hover)
+.card__background{
+	filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  .Des_text{
+	  left: 0;
+	  padding-left:25px;
+	 position: absolute;
+	top:14em;
+	width: 300px;
+	color: white;
+
+	  
+  }
+  .price{
+	
+	  color: white;
+	  font-size: 0.9rem;
+  }
+
 
 
 /* footer */
@@ -520,6 +573,14 @@ color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
 } 
+
+svg {
+    stroke: #000;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
 
 
 
