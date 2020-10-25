@@ -90,7 +90,7 @@ header.header {
 
 .social_list_item a i {
   font-size: 14px;
-  color: #ffffff;
+  color: var(--color_3);
 }
 
 .user_box_link a:hover {
@@ -106,7 +106,7 @@ header.header {
   font-size: 13px;
   line-height: 36px;
   font-weight: 600;
-  color: #ffffff;
+  color:var(--color_3);
 }
 .user_box_login {
   margin-right: 15px;
@@ -115,8 +115,8 @@ header.header {
   display: block;
   position: absolute;
   top: 12px;
-  right: 330px;
-  background: #ffffff;
+  right: 315px;
+  background:var(--color_3);
   width: 2px;
   height: 11px;
   content: "";
@@ -211,7 +211,7 @@ Slider
   height: 35px;
   width: 35px;
   background: #80808000;
-  color: #ffffff;
+  color: var(--color_3);
   text-align: center;
   line-height: 20px;
   border-radius: 50%;
@@ -679,12 +679,12 @@ a.blog-post {
 .test_quote_title {
   font-size: 20px;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--color_3);
   padding-left: 3px;
 }
 .test_quote_text {
   font-weight: 500;
-  color: #ffffff;
+  color: var(--color_3);
   margin-top: 11px;
 }
 
@@ -729,7 +729,7 @@ a.blog-post {
   float: left;
   width: 100%;
   text-align: left;
-  color: #fff;
+  color: var(--color_3);
 }
 
 .footer-item h4 {
@@ -741,7 +741,7 @@ a.blog-post {
   font-size: 28px;
   font-family: sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: var(--color_3);
 }
 
 .footer-item .footer_descript {
@@ -752,7 +752,7 @@ a.blog-post {
 .footer-item span,
 .footer-item ul li a {
   font-size: 11px;
-  color: #fff;
+  color: var(--color_3);
 }
 
 .footer-item ul {
@@ -777,11 +777,11 @@ a.blog-post {
 }
 
 .footer-item .text-link {
-  color: #fff;
+  color: var(--color_3);
 }
 
 .footer-item .text-link:before {
-  background: #fff;
+  background: var(--color_3);
 }
 
 .footer-logo img {
@@ -804,7 +804,7 @@ a.blog-post {
 .copyright {
   float: left;
   text-align: left;
-  color: #fff;
+  color: var(--color_3);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
