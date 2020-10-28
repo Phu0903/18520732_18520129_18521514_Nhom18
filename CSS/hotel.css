@@ -1,0 +1,53 @@
+#hotel_list {
+    padding: 125px 0;
+    padding-top: 25px;
+    background-color: aliceblue;
+}
+
+.hotel_title {
+    padding-bottom: 20px;
+}
+
+.hotel_title h2 {
+    margin-top: 10px;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+#hotel_list .hotel_media {
+    margin: 12px;
+}
+
+#hotel_list .hotel_media img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+    cursor: pointer;
+}
+
+#hotel_list .hotel_media:hover img{
+    transform: scale(1.05) translateZ(0);
+}
+
+#hotel_list .hotel_media:hover > #hotel_list .hotel_media:not(:hover) img{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+
+
+#hotel_list .hotel_desc {
+    margin: 10px 10px 20px;
+}
+
+#hotel_list .hotel_desc h3 {
+    font-weight: 700;
+    padding: 5px 0;
+}
