@@ -1,0 +1,53 @@
+#tours_list {
+    padding: 125px 0;
+    padding-top: 25px;
+    background-color: aliceblue;
+}
+
+.tour_title {
+    padding-bottom: 20px;
+}
+
+.tour_title h2 {
+    margin-top: 10px;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+#tours_list .tour_media {
+    margin: 12px;
+}
+
+#tours_list .tour_media img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+    cursor: pointer;
+}
+
+#tours_list .tour_media:hover img{
+    transform: scale(1.05) translateZ(0);
+}
+
+#tours_list .tour_media:hover > #tours_list .tour_media:not(:hover) img{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+
+
+#tours_list .tour_desc {
+    margin: 10px 10px 20px;
+}
+
+#tours_list .tour_desc h3 {
+    font-weight: 700;
+    padding: 5px 0;
+}
