@@ -34,10 +34,11 @@ a:hover {
 
 body,
 html {
-  height: 100%;
 }
 
 body {
+   
+  
   margin: 0;
   font-family: 'Times New Roman', Times, serif
 }
@@ -83,7 +84,6 @@ header.header {
 .social_list_item a {
   display: block;
   width: 100%;
-  height: 100%;
   padding-left: 10px;
   padding-right: 10px;
   line-height: 36px;
@@ -112,16 +112,7 @@ header.header {
 .user_box_login {
   margin-right: 15px;
 }
-.user_box_login::after {
-  display: block;
-  position: absolute;
-  top: 12px;
-  right: 315px;
-  background:var(--color_3);
-  width: 2px;
-  height: 11px;
-  content: "";
-}
+
 
 .nav-menu-header {
   padding: 2.5rem 1rem !important;
@@ -176,7 +167,7 @@ Content
 **************************/
 .home {
   width: 100%;
-  height: 100vh;
+ 
 }
 /*************************
 Slider
@@ -185,7 +176,7 @@ Slider
   top: 0;
   left: 0 !important;
   width: 100%;
-  height: 100vh;
+
   z-index: 10;
 }
 .owl-theme {
@@ -343,7 +334,7 @@ Slider
   line-height: 53px;
   padding-left: 56px;
   padding-right: 56px;
-  background: linear-gradient(to left, black, #6817ff);
+  background: black;
   z-index: 10;
   transform: translateY(15px);
   border-radius: 29px;
@@ -361,7 +352,7 @@ Slider
 
 /*COUNTER-ENTRY*/
 .counter-item {
-  padding: 40px;
+  padding: 40px 40px 0px 40px;
 }
 .title_contry_1 {
   font-weight: 700;
@@ -453,11 +444,21 @@ Slider
   position: relative;
   background-position: center;
   border-radius: 24px;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  
   transform-origin: center;
   transform: scale(1) translateZ(0);
   transition: filter 200ms linear, transform 200ms linear;
 }
+.card__background:before{
+  content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 24px;
+   background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+} 
 .block-5:hover .card__background {
   transform: scale(1.05) translateZ(0);
 }
@@ -512,19 +513,22 @@ h3.heading {
   font-family: FontAwesome;
 }
 /*---------------*/
-.container-fluid {
-  padding-right: 0px !important;
-  padding-left: 0px !important;
+.Hotels{
+  width: 100%;
+}
+ .container-fluid {
+   width: 100%;
+  
 }
 .heading-section-text{
-  padding-left: 30px;
+  text-align: center;
 }
 
-.heading-section_img {
- 
+.heading-section_img{
+  width: 100%;
 }
 .heading-section-hotels{
-  padding: 40px !important;
+  
 }
 .text_hotel_1 {
   font-size: 30px;
@@ -536,28 +540,92 @@ h3.heading {
   position: relative;
   
 }
-.block-6 .card__background{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 400px;
-  margin: auto;
-  margin-top: 20px;
-  list-style: none;
-  position: relative;
-  background-position: center;
-  border-radius: 24px;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
-}
+
 h2.fadeInUp.ftco-animate {
   padding-bottom: 15px;
   font-size: 35px;
   font-weight: 600;
+} 
+/*----video ----*/
+.conter_area, .video_area {
+ 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:60px 0;
+}
+
+.video_area .video_wrap h3 {
+  font-family: "Nothing You Could Do",cursive;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  color: #fff;
+  margin-bottom: 55px;
+}
+.video_play_button {
+    width: 84px;
+    height: 84px;
+    text-align: center;
+    line-height: 84px;
+    border-radius: 50%;
+    background: #8d4fff;
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    animation: pulse-border 2s infinite;
+}
+
+@keyframes pulse-border{
+  0% {
+   
+    box-shadow: 0 0 0 0 rgba(248, 4, 207, 0.4); }
+  70% {
+   
+    box-shadow: 0 0 0 30px rgba(253, 0, 190, 0); }
+  100% {
+   
+    box-shadow: 0 0 0 0 rgba(255, 0, 221, 0); } }
+
+    /*--counter*/
+    .counter
+{
+   color: white;
+    text-align: center;
+}
+.employees,.customer,.design,.order
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.counter-count
+{
+    font-size: 18px;
+    background-color: #00b3e7;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-size: 24px;
+    color: #fff;
+    line-height: 34px;
 }
 /*-------blog-------*/
+.colorlib-blog{
+
+}
 .flex-img {
   background-size: cover;
   background-position: left center;
@@ -621,7 +689,8 @@ a.blog-post {
   margin-left: 0px !important;
 }
 .testimonials {
-  margin-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
 }
 .testimonials_row {
@@ -634,7 +703,7 @@ a.blog-post {
   padding-right: 0px !important;
 }
 .test_slider_container {
-  background-image: url("../img/booking/tour-1.jpg");
+  
   height: 30em;
   width: 100%;
   background-repeat: no-repeat;
@@ -686,6 +755,67 @@ a.blog-post {
   font-weight: 500;
   color: var(--color_3);
   margin-top: 11px;
+}
+
+/* summer */
+.sm
+{
+  padding-top: 2em;
+}
+.container.sm-container {
+  position: relative;
+}
+.summer{
+  width: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25em;
+    background-size: cover;
+    position: relative;
+    background-position: 90% 40%;
+  
+}
+.summer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( transparent 1%, transparent 1%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 99%);
+}
+
+.sm-column {
+  transform: translate(50%, 40%);
+  top: 50%;
+  text-align: center;
+  position: absolute;
+}
+h3.sm-first-font{
+  font-size: 20px;
+}
+h1.sm-first-font{
+  font-size: 32px;
+}
+
+
+.sm-first-font{
+  color: var(--color_3);
+  font-weight: normal;
+  padding: 10px;
+}
+.sm-bt-son{
+  padding: 10px 20px;
+  background-color: var(--color_2);
+  color:var(--color_3);
+}
+a.sm-bt-son {
+  color: var(--color_3);
+}
+.sm-bt-son:hover{
+  background: linear-gradient(to right, #dddddd 100%, #050005 5%);
+  color: black;
+  transition: 0.5s;
 }
 
 /* footer */
