@@ -13,18 +13,28 @@ $('.home_slider_owl .owl-carousel').owlCarousel({
     items:1,
     autoplay:true
 })
-$('.test_slider_container .owl-carousel').owlCarousel({
+$('#owl_tesimonials').owlCarousel({
     loop:true,
+    dots:false,
     margin:10,
-    nav:false,
-    dots:true,
-    items:1,
-    autoplay:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
 })
 $('.Hotels .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    dots:false,
     responsive:{
         0:{
             items:1
