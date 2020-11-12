@@ -3,6 +3,20 @@
 /*************************
 Slider
 **************************/
+var myobj = document.getElementById("top-bar");
+
+
+$(window).scroll(function(e){
+    var vitri=$('body,html').scrollTop()
+    if(vitri>=100)
+    {
+      
+        myobj.remove();
+    }
+    else{
+      $('super_container').myobj.add();
+        }
+  })
 $('.home_slider_owl .owl-carousel').owlCarousel({
     navigation : true,
     singleItem : true,

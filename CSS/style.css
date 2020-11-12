@@ -37,7 +37,7 @@ html {
 }
 
 body {
-   
+   background: #f9f9f9;
   
   margin: 0;
   font-family: 'Times New Roman', Times, serif
@@ -516,7 +516,7 @@ h3.heading {
   content: "\f123";
   font-family: FontAwesome;
 }
-/*---------------*/
+/*------Hotel---------*/
 .Hotels{
   width: 100%;
 }
@@ -550,6 +550,34 @@ h2.fadeInUp.ftco-animate {
   font-size: 35px;
   font-weight: 600;
 } 
+.Hotels .owl-carousel .owl-nav button[type="button"] {
+  height: 35px;
+  width: 35px;
+  background: var(--color_1);
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 15px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  z-index: 11;
+  transform: translateY(-15px);
+  opacity: 0;
+  transition: 0.5s;
+  outline-style: none;
+}
+.Hotels .owl-carousel .owl-nav button[type="button"].owl-next {
+  left: auto;
+  right: -10px
+}
+.Hotels .owl-carousel:hover .owl-nav button[type="button"] {
+  opacity: 1;
+  transition: 0.5s;
+  background: var(--color_1);
+}
 /*----video ----*/
 .conter_area, .video_area {
  
@@ -696,6 +724,34 @@ a.blog-post {
   bottom: 2em;
   padding: 1em;
   color: var(--color_3);
+}
+.testimonials .owl-carousel .owl-nav button[type="button"] {
+  height: 35px;
+  width: 35px;
+  background: var(--color_1);
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 15px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  z-index: 11;
+  transform: translateY(-15px);
+  opacity: 0;
+  transition: 0.5s;
+  outline-style: none;
+}
+.testimonials .owl-carousel .owl-nav button[type="button"].owl-next {
+  left: auto;
+  right: 0px
+}
+.testimonials .owl-carousel:hover .owl-nav button[type="button"] {
+  opacity: 1;
+  transition: 0.5s;
+  background: var(--color_1);
 }
 span.cal_text {
   color: white;
@@ -919,5 +975,11 @@ a.sm-bt-son {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.bar-menu{
+  height: 80px;
+  transition: 0.5s;
+  background:#fff;
 }
 
