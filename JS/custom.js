@@ -3,20 +3,58 @@
 /*************************
 Slider
 **************************/
-var myobj = document.getElementById("top-bar");
+$('.counter-count').counterUp({
+    delay:20,
+    
+})
+
 
 
 $(window).scroll(function(e){
     var vitri=$('body,html').scrollTop()
-    if(vitri>=100)
+    
+    if(vitri>=500)
     {
-      
-        myobj.remove();
+        $(".top-bar").css({
+            "opacity":"0",
+            "transition": "1s",
+            "height":"0px"
+            
+        });
+        $(".nav-menu-header").css({
+            "padding": "1.5em",
+            "background": "rgba(49, 18, 75, 0.8)",
+            "transition": "1.5s"
+            
+        })
+        
+       
     }
     else{
-      $('super_container').myobj.add();
-        }
-  })
+        $(".top-bar").css({
+            "display": "block",
+             "opacity":"1",
+            "transition": "1s",
+            "height": "38px"
+        });
+        $(".nav-menu-header").css({
+            "padding": "2.5rem 1rem",
+             "background": "#00000040",
+             "transition": "1.5s", 
+              "z-index":"13"
+                     })
+
+    }
+    
+   
+   
+})
+
+
+
+
+
+
 $('.home_slider_owl .owl-carousel').owlCarousel({
     navigation : true,
     singleItem : true,
@@ -61,17 +99,7 @@ $('.Hotels .owl-carousel').owlCarousel({
         }
     }
 })
-$('.counter-count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 3000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
+
 
 
 
