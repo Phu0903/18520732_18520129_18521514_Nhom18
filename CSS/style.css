@@ -12,6 +12,10 @@
   font-family: "FontAwesome";
   src:url('../fonts/Font\ Awesome\ 5\ Brands-Regular-400.otf')
 }
+@font-face{
+  font-family: "Gabriola";
+  src: ("../fonts/gabriola_Font_Download.ttf");
+}
 
 /*********************************
 2. Body 
@@ -205,6 +209,50 @@ Slider
 
   /* opacity:0.5; */
 }
+.over_lay{
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgb(0, 0, 0);
+    opacity: .2;
+}
+.home_slider_content {
+  position: absolute;
+  top: 29%;
+   width: 100%;
+}
+.text_svg {
+ 
+  width: 28em;
+  margin: 0 auto;
+}
+.text_slider{
+  width: 36em;
+  margin: 0 auto;
+}
+.text_svg path{
+  stroke: #fffffffa;
+  fill: none;
+  animation: fill 2s ease forwards 1.5s;
+}
+@keyframes fill{
+  from{
+    fill:transparent;
+  }
+  to{
+    fill:white;
+  }
+}
+h1.text_1 {
+  font-weight: 900;
+    font-family: Gabriola;
+    color: white;
+    font-size: 80pt;
+  
+}
 .home_slider_owl .owl-carousel .owl-nav button[type="button"] {
   height: 35px;
   width: 35px;
@@ -233,12 +281,7 @@ Slider
   transition: 0.5s;
   background: #80808000;
 }
-.home_slider_content {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  color: white;
-}
+
 
 /*search*/
 .search {

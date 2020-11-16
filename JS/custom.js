@@ -3,10 +3,6 @@
 /*************************
 Slider
 **************************/
-$('.counter-count').counterUp({
-    delay:20,
-    
-})
 
 
 
@@ -54,7 +50,7 @@ $(window).scroll(function(e){
 
 
 
-
+//slider//
 $('.home_slider_owl .owl-carousel').owlCarousel({
     navigation : true,
     singleItem : true,
@@ -63,7 +59,7 @@ $('.home_slider_owl .owl-carousel').owlCarousel({
     loop:true,
     nav:true,
     items:1,
-    autoplay:true
+    autoplay:false
 })
 $('#owl_tesimonials').owlCarousel({
     loop:true,
@@ -99,6 +95,26 @@ $('.Hotels .owl-carousel').owlCarousel({
         }
     }
 })
+
+//Text-svg//
+
+var cdtimeline = anime.timeline();
+
+
+
+cdtimeline.add({
+    targets:'.text_svg g path',
+    strokeDashoffset:[anime.setDashoffset,0],
+    duration:2000,
+  
+    easing:'easeOutSine',
+    direction:'alternate',
+    loop:true
+})
+
+
+
+
 
 
 
