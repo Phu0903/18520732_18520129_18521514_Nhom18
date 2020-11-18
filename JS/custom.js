@@ -111,6 +111,12 @@ cdtimeline.add({
     direction:'alternate',
     loop:true
 })
+jQuery(document).ready(function($) {
+    $('.counter-count').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
 
 
 

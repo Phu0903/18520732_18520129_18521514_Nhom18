@@ -1,53 +1,23 @@
-#service {
-    background-color: rgb(251, 251, 246);
-    padding: 7em 4em;
+
+.home{
+    width: 100%;
+    height: 465px;
+}
+.home_background{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+.over_lay_2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgb(0, 0, 0);
+    opacity: .2;
+    height: 465px;
 }
 
-.service_title {
-    padding-bottom: 50px;
-}
-
-.service_title > h2 {
-    font-size: 40px;
-    font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#service .service_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 2em;
-    margin: 0 10%;
-}
-
-h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(96, 88, 88);
-    font-size: 15px;
-}
-
-.icon {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background: #efeded;
-    width: 120px;
-    height: 120px;
-    display: table;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
-.icon i {
-    display: table-cell;
-    vertical-align: middle;
-    height: 120px;
-    font-size: 60px;
-    color: #00BBF0;
-    cursor: pointer;
-}

@@ -8,11 +8,11 @@
   src: url("../fonts/beyond_the_mountains.otf") format("truetype"),
     url("../fonts/beyond_the_mountains.ttf") format("opentype");
 }
-@font-face{
+@font-face {
   font-family: "FontAwesome";
-  src:url('../fonts/Font\ Awesome\ 5\ Brands-Regular-400.otf')
+  src: url("../fonts/Font\ Awesome\ 5\ Brands-Regular-400.otf");
 }
-@font-face{
+@font-face {
   font-family: "Gabriola";
   src: ("../fonts/gabriola_Font_Download.ttf");
 }
@@ -21,13 +21,11 @@
 2. Body 
 *********************************/
 :root {
-  
-  --color_1: #8333E9;
+  --color_1: #8333e9;
   --color_2: #000000;
   --color_3: #f9f7f1;
   --color_4: rgba(49, 18, 75, 0.8);
   --color-5: #fa9e1b;
-  
 }
 a,
 a:link,
@@ -44,17 +42,21 @@ html {
 }
 
 body {
-   background: var(--color_3);
-  
+  background: var(--color_3);
   margin: 0;
-  font-family: 'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
+}
+h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #2d2c2c;
 }
 
 /***********************************
 Header
 ************************************/
-.sm
-{
+.sm {
+  padding-bottom: 2em;
   padding-top: 2em;
 }
 .heading-section {
@@ -78,7 +80,6 @@ header.header {
   margin-right: 36px;
   font-size: 13px;
   line-height: 36px;
-  
 }
 .phone a {
   color: var(--color_3);
@@ -120,17 +121,15 @@ header.header {
   font-size: 13px;
   line-height: 36px;
   font-weight: 600;
-  color:var(--color_3);
+  color: var(--color_3);
 }
 .user_box_login {
   margin-right: 15px;
 }
 
-
 .nav-menu-header {
-  padding: 2.5rem 1rem ;
+  padding: 2.5rem 1rem;
   background: #00000040;
-  
 }
 
 .nav_menu_content {
@@ -186,7 +185,6 @@ Slider
   top: 0;
   left: 0 !important;
   width: 100%;
-
   z-index: 10;
 }
 .owl-theme {
@@ -209,49 +207,47 @@ Slider
 
   /* opacity:0.5; */
 }
-.over_lay{
+.over_lay {
   position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    background: rgb(0, 0, 0);
-    opacity: .2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: rgb(0, 0, 0);
+  opacity: 0.2;
 }
 .home_slider_content {
   position: absolute;
   top: 29%;
-   width: 100%;
+  width: 100%;
 }
 .text_svg {
- 
   width: 28em;
   margin: 0 auto;
 }
-.text_slider{
+.text_slider {
   width: 36em;
   margin: 0 auto;
 }
-.text_svg path{
+.text_svg path {
   stroke: #fffffffa;
   fill: none;
   animation: fill 2s ease forwards 1.5s;
 }
-@keyframes fill{
-  from{
-    fill:transparent;
+@keyframes fill {
+  from {
+    fill: transparent;
   }
-  to{
-    fill:white;
+  to {
+    fill: white;
   }
 }
 h1.text_1 {
   font-weight: 900;
-    font-family: Gabriola;
-    color: white;
-    font-size: 80pt;
-  
+  font-family: Gabriola;
+  color: white;
+  font-size: 80pt;
 }
 .home_slider_owl .owl-carousel .owl-nav button[type="button"] {
   height: 35px;
@@ -281,7 +277,6 @@ h1.text_1 {
   transition: 0.5s;
   background: #80808000;
 }
-
 
 /*search*/
 .search {
@@ -496,16 +491,22 @@ h1.text_1 {
   transform: scale(1) translateZ(0);
   transition: filter 200ms linear, transform 200ms linear;
 }
-.card__background:before{
-  content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 24px;
-   background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
-} 
+.card__background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 24px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 18%,
+    rgba(0, 0, 0, 0.8) 99%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
 .block-5:hover .card__background {
   transform: scale(1.05) translateZ(0);
 }
@@ -546,9 +547,9 @@ h3.heading {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
-  opacity: .6;
+  opacity: 0.6;
 }
-.icon-star{
+.icon-star {
   margin-right: 2px;
 }
 .icon-star:before {
@@ -560,22 +561,20 @@ h3.heading {
   font-family: FontAwesome;
 }
 /*------Hotel---------*/
-.Hotels{
-  width: 100%;
-}
- .container-fluid {
-   width: 100%;
+.Hotels {
   
 }
-.heading-section-text{
+.container-fluid {
+ 
+}
+.heading-section-text {
   text-align: center;
 }
 
-.heading-section_img{
+.heading-section_img {
   width: 100%;
 }
-.heading-section-hotels{
-  
+.heading-section-hotels {
 }
 .text_hotel_1 {
   font-size: 30px;
@@ -585,14 +584,13 @@ h3.heading {
   padding: 5px;
   list-style: none;
   position: relative;
-  
 }
 
 h2.fadeInUp.ftco-animate {
   padding-bottom: 15px;
   font-size: 35px;
   font-weight: 600;
-} 
+}
 .Hotels .owl-carousel .owl-nav button[type="button"] {
   height: 35px;
   width: 35px;
@@ -614,7 +612,7 @@ h2.fadeInUp.ftco-animate {
 }
 .Hotels .owl-carousel .owl-nav button[type="button"].owl-next {
   left: auto;
-  right: -10px
+  right: -10px;
 }
 .Hotels .owl-carousel:hover .owl-nav button[type="button"] {
   opacity: 1;
@@ -622,80 +620,82 @@ h2.fadeInUp.ftco-animate {
   background: var(--color_4);
 }
 /*----video ----*/
-.conter_area, .video_area {
- 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding:60px 0;
+.conter_area,
+.video_area {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0;
 }
 
 .video_area .video_wrap h3 {
-  font-family: "Nothing You Could Do",cursive;
+  font-family: Gabriola;
   font-weight: 400;
   font-size: 80px;
   line-height: 90px;
   color: var(--color_3);
   margin-bottom: 55px;
-  
 }
 .video_play_button {
-    width: 84px;
-    height: 84px;
-    text-align: center;
-    line-height: 84px;
-    border-radius: 50%;
-    background: var(--color_1);
-    display: inline-block;
-    color: var(--color_3);
-    font-size: 17px;
-    animation: pulse-border 2s infinite;
+  width: 84px;
+  height: 84px;
+  text-align: center;
+  line-height: 84px;
+  border-radius: 50%;
+  background: var(--color_1);
+  display: inline-block;
+  color: var(--color_3);
+  font-size: 17px;
+  animation: pulse-border 2s infinite;
 }
 
-@keyframes pulse-border{
+@keyframes pulse-border {
   0% {
-   
-    box-shadow: 0 0 0 0 rgba(248, 4, 207, 0.4); }
+    box-shadow: 0 0 0 0 rgba(248, 4, 207, 0.4);
+  }
   70% {
-   
-    box-shadow: 0 0 0 30px rgba(253, 0, 190, 0); }
+    box-shadow: 0 0 0 30px rgba(253, 0, 190, 0);
+  }
   100% {
-   
-    box-shadow: 0 0 0 0 rgba(255, 0, 221, 0); } }
+    box-shadow: 0 0 0 0 rgba(255, 0, 221, 0);
+  }
+}
 
-    /*--counter*/
-    .counter
-{
+/*--counter*/
+.counter {
   position: relative;
-   color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
-.employees,.customer,.design,.order
-{
-    margin-top: 70px;
-    margin-bottom: 70px;
+.employees,
+.customer,
+.design,
+.order {
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
-.counter-count
-{
-    font-size: 38px;
-    border-radius: 50%;
-    position: relative;
-    color: var(--color_3);
-    text-align: center;
-    
-    width: 120px;
-    height: 60px;
-    display: inline-block;
+.counter-count {
+  font-size: 38px;
+  border-radius: 50%;
+  position: relative;
+  color: var(--color_3);
+  text-align: center;
+
+  width: 120px;
+  height: 60px;
+  display: inline-block;
 }
 
-.employee-p,.customer-p,.order-p,.design-p
-{
-    font-size: 38px;
-    color: var(--color_3);
-    line-height: 34px;
+.employee-p,
+.customer-p,
+.order-p,
+.design-p {
+  font-size: 38px;
+  color: var(--color_3);
+  line-height: 34px;
 }
 /*-------blog-------*/
-.colorlib-blog{
+.colorlib-blog {
   padding-bottom: 7em;
 }
 .flex-img {
@@ -755,7 +755,7 @@ a.blog-post {
 .tes-top {
   padding: 1em;
 }
-.tes-top-h2{
+.tes-top-h2 {
   color: var(--color_3);
 }
 .tes_bottom {
@@ -785,7 +785,7 @@ a.blog-post {
 }
 .testimonials .owl-carousel .owl-nav button[type="button"].owl-next {
   left: auto;
-  right: 0px
+  right: 0px;
 }
 .testimonials .owl-carousel:hover .owl-nav button[type="button"] {
   opacity: 1;
@@ -800,37 +800,35 @@ span.cal_text {
 span.tes_cmt {
   color: #d1d1d1;
   font-style: italic;
-  
+
   /* font-family: inherit; */
 }
 .card__background:hover .cal_text,
 .card__background:hover .tes-top-h2,
-.card__background:hover .tes_name ,
-.card__background:hover .underline:after
-{
+.card__background:hover .tes_name,
+.card__background:hover .underline:after {
   background-position: left;
-  color:  #fa9e1b
-} 
+  color: #fa9e1b;
+}
 
- .underline:after {
-  content: '';
+.underline:after {
+  content: "";
   width: 50%;
-  background: #FFF;
+  background: #fff;
   height: 8px;
   position: relative;
   display: block;
   float: none;
   margin: 13px 0 0px;
-  background: linear-gradient(to left, rgb(255, 255, 255) 50%, #fa9e1b 50%) right;
+  background: linear-gradient(to left, rgb(255, 255, 255) 50%, #fa9e1b 50%)
+    right;
   background-size: 200%;
-  transition: .5s ease-out;
-  
+  transition: 0.5s ease-out;
 }
 .underline:hover:after,
 .underline:focus:after,
 .underline:active:after {
   background-position: left;
-  
 }
 
 /* summer */
@@ -1016,9 +1014,8 @@ a.sm-bt-son {
   letter-spacing: 1px;
 }
 
-.bar-menu{
+.bar-menu {
   height: 80px;
   transition: 0.5s;
-  background:#fff;
+  background: #fff;
 }
-
