@@ -662,15 +662,12 @@ h2.fadeInUp.ftco-animate {
 }
 
 /*--counter*/
-.counter {
+.counter-container {
   position: relative;
   color: white;
   text-align: center;
 }
-.employees,
-.customer,
-.design,
-.order {
+.counter {
   margin-top: 70px;
   margin-bottom: 70px;
 }
@@ -686,13 +683,11 @@ h2.fadeInUp.ftco-animate {
   display: inline-block;
 }
 
-.employee-p,
-.customer-p,
-.order-p,
-.design-p {
+.counter-p {
   font-size: 38px;
   color: var(--color_3);
   line-height: 34px;
+  font-family: Gabriola;
 }
 /*-------blog-------*/
 .colorlib-blog {
@@ -757,6 +752,7 @@ a.blog-post {
 }
 .tes-top-h2 {
   color: var(--color_3);
+  font-family:Gabriola !important ;
 }
 .tes_bottom {
   position: absolute;
@@ -794,8 +790,8 @@ a.blog-post {
 }
 span.cal_text {
   color: var(--color_3);
-  font-size: 14px;
-  font-family: monospace;
+  font-size: 16px;
+  
 }
 span.tes_cmt {
   color: #d1d1d1;

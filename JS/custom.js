@@ -41,9 +41,6 @@ $(window).scroll(function(e){
                      })
 
     }
-    
-   
-   
 })
 
 
@@ -99,9 +96,6 @@ $('.Hotels .owl-carousel').owlCarousel({
 //Text-svg//
 
 var cdtimeline = anime.timeline();
-
-
-
 cdtimeline.add({
     targets:'.text_svg g path',
     strokeDashoffset:[anime.setDashoffset,0],
@@ -111,12 +105,35 @@ cdtimeline.add({
     direction:'alternate',
     loop:true
 })
-jQuery(document).ready(function($) {
-    $('.counter-count').counterUp({
-        delay: 10,
-        time: 1000
-    });
-});
+
+//counter js 
+
+const counters = document.querySelectorAll('.counter-count');
+const speed = 1000; 
+var temp = 1 ; 
+$(window).scroll(function(e){
+    var vitri_1=$('body,html').scrollTop()
+    console.log(vitri_1);
+    if (vitri_1 >1000)
+    {
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
+                if (count < target) {
+                    counter.innerText = count + inc;
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    }
+})
+
+
 
 
 
