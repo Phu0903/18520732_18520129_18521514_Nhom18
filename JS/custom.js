@@ -56,7 +56,7 @@ $('.home_slider_owl .owl-carousel').owlCarousel({
     loop:true,
     nav:true,
     items:1,
-    autoplay:false
+    autoplay:true
 })
 $('#owl_tesimonials').owlCarousel({
     loop:true,
@@ -118,8 +118,8 @@ $(window).scroll(function(e){
     {
         counters.forEach(counter => {
             const updateCount = () => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
+                const target = + counter.getAttribute('data-target');
+                const count = + counter.innerText;
                 const inc = target / speed;
                 if (count < target) {
                     counter.innerText = count + inc;
