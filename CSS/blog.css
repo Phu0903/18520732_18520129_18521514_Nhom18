@@ -1,0 +1,206 @@
+.sec-header3 h2 {
+    margin-top: 5%;
+}
+
+.common-pad-room1 {
+    padding-top: 6.4em;
+    padding-bottom: 0;
+}
+
+.col-img-family {
+    width: 66.66666667%;
+    float: left;
+}
+
+.col-family-content {
+    width: 33.33333333%;
+    float: right;
+}
+
+.family-outer {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 6.4em;
+}
+
+.family-content {
+    position: relative;
+    padding-left: 4em;
+}
+
+.family-content h2 {
+    color: #0e1322;
+    font: 2em/1em "Playball", sans-serif;
+    margin: 0 0 1.3em;
+    padding: 0;
+    position: relative;
+}
+
+.family-content h2:after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+    background: #a7cc38;
+    margin: 0 0 0 12px;
+}
+
+.family-content p {
+    color: #898989;
+    margin: 0 0 1.5em;
+    padding: 0;
+    font: 400 1.0715em/1.8em "Open Sans", sans-serif;
+}
+
+.family-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.family-img .image-gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.family-img .image-gallery .single-gallery {
+    padding-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+.family-img .image-gallery .single-r-gallery {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.family-img .image-gallery .single-gallery.mix {
+    display: none;
+}
+
+.family-img .image-gallery .single-gallery.span-13 {
+    width: 58%;
+}
+
+.family-img .image-gallery .single-gallery.span-12 {
+    width: 42%;
+}
+
+.family-img .image-gallery .single-gallery.span-11 {
+    width: 43%;
+}
+
+.family-img .image-gallery .single-gallery.span-10 {
+    width: 100%;
+}
+
+.family-img .image-gallery .single-gallery.span-8 {
+    width: 66.66666667%;
+}
+
+.family-img .image-gallery .single-gallery.span-7 {
+    width: 57%;
+}
+
+.family-img .image-gallery .single-gallery.span-6 {
+    width: 50%;
+}
+
+.family-img .image-gallery .single-gallery.span-4 {
+    width: 33.33333333%;
+}
+
+.family-img .image-gallery .single-gallery.span-3 {
+    width: 25%;
+}
+
+.family-img .single-gallery:hover .img-holder img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.family-img .single-gallery .img-holder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.family-img .single-gallery .img-holder img {
+    -webkit-transform: scale();
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.bicycleing-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.bicycleing-img ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bicycleing-img ul li {
+    padding: 0;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bicycleing-img ul li:nth-child(3) {
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+
+.bicycleing-img ul li:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0;
+}
+
+.water-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.water-img ul {
+    margin: 0;
+    padding: 0;
+}
+
+.water-img ul li {
+    padding: 0;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.water-img ul li:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+}
+
+.water-img ul li:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0;
+}
+
+.water-img ul li:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 14.6em;
+}
