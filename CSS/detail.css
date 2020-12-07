@@ -1,0 +1,436 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h4{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 20px;
+}
+
+.single-sidebar-widget .popular-post .img-box, .single-sidebar-widget .popular-post .content {
+    display: table-cell;
+    vertical-align: top;
+  }
+  
+  .single-sidebar-widget .popular-post li {
+    margin-bottom: 30px;
+  }
+  
+  .single-sidebar-widget .popular-post .img-box {
+    width: 110px;
+  }
+  
+  .single-sidebar-widget .popular-post .content {
+    padding-left: 30px;
+  }
+  
+  .single-sidebar-widget .popular-post .content a h4 {
+    font: 600 1em/1em "Open Sans", sans-serif;
+    color: #242424;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .single-sidebar-widget .popular-post .content p {
+    color: #8E8D8D;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+  }
+  
+  .single-sidebar-widget .popular-post .content span {
+    color: #999999;
+    font: 400 0.93em/1em "Open Sans", sans-serif;
+    display: block;
+    margin-top: 1.2em;
+  }
+  
+  .single-sidebar-widget .popular-post .content h6 {
+    color: #242424;
+    font: 1.6em/1em "Playball", sans-serif;
+    margin: 0.6em 0 0;
+    padding: 0;
+  }
+  
+  .single-sidebar-widget .popular-post .content h6 span {
+    display: inline-block;
+    font: 600 0.63em/1em "Open Sans", sans-serif;
+    font-style: italic;
+  }
+
+.row {
+    padding-left: 190px;
+}
+.slide-detail{
+    padding-top: 250px;
+    padding-bottom: 80px;
+}
+
+/* .single-sidebar-widget {
+    position: relative;
+  } */
+
+.book-r-form {
+    background: #f1eff2;
+    margin-bottom: 3em;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .book-r-form .room-price {
+    border-bottom: 1px solid #dfdfdf;
+    position: relative;
+    text-align: center;
+    padding: 3em 0 1em;
+  }
+  
+  .book-r-form .room-price h6 {
+    margin: 0 0 0.8em;
+    padding: 0;
+    font: 700 0.88em/1em "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #848484;
+  }
+  
+  .book-r-form .room-price p {
+    font: 2.66em/1em "Playball", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+  
+  .book-r-form .room-price p span {
+    font: 600 0.4em/1em "Open Sans", sans-serif;
+    color: #848484;
+    text-transform: uppercase;
+  }
+  
+  .book-r-form .book-form {
+    border-top: 1px solid #fff;
+    position: relative;
+    padding: 2em 0.4em;
+    overflow: hidden;
+  }
+  
+  .book-r-form .book-form b {
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+    font: 600 0.95em/1em "Open Sans", sans-serif;
+    margin: 0 0 0.8em;
+  }
+  
+  .book-r-form .book-form .form-control[readonly] {
+    height: 39px;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 0;
+    font: 400 1.0715em/1em 'PT Serif', serif;
+    font-style: italic;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+  }
+  
+  .book-r-form .book-form .dropdownselect {
+    background-color: #fff;
+    border-radius: 0;
+    height: 40px;
+    font: 400 1.0715em/1em 'PT Serif', serif;
+    font-style: italic;
+    color: #4b4b4b;
+    border: 1px solid #e3e3e3;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 1em;
+  }
+  
+  .book-r-form .select-box {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+  }
+  
+  .book-r-form .select-box .select-menu + .ui-selectmenu-button {
+    width: 100% !important;
+    border-radius: 0;
+    padding: 0px 12px;
+    border: 1px solid #E5E5E5;
+    height: 40px;
+    background: #fff;
+    outline: none;
+    color: #898989;
+  }
+  
+  .book-r-form .select-menu + .ui-selectmenu-button .ui-selectmenu-text {
+    padding: 0;
+    font: 400 1.039em/1em 'PT Serif', serif;
+    line-height: 40px;
+    font-style: italic;
+    color: #4a4a4a;
+  }
+  
+  .book-r-form .select-menu + .ui-selectmenu-button .ui-icon.ui-icon-triangle-1-s {
+    background: url(../images/select-menu-arrow.png) 0 0 no-repeat;
+    width: 9px;
+    height: 6px;
+    margin-top: -3px;
+    margin-right: 4px;
+  }
+  
+  .ser-in-box .select-menu + .ui-selectmenu-menu .ui-menu-item {
+    background: #2d6293;
+    border-color: #00ACD9;
+    font-style: normal;
+  }
+  
+  .book-r-form .book-form .res-btn {
+    width: 100%;
+    background: #85ab00;
+  }
+
+  .form-control{
+      margin-bottom: 10px;
+  }
+
+  .res-btn{
+      border: none;
+      outline: none;
+      font-size: 14px;
+      line-height: 28px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      display: inline-block;
+      border-radius: 3px;
+      padding: 10px 25px;
+      transition: all 0.25s ease;
+  }
+  
+  .book-r-form .book-form .res-btn:hover {
+    background: #1a1a1c;
+  }
+
+  .img-cap-effect .img-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  
+  
+  .single-room-wrapper {
+    position: relative;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper {
+    position: relative;
+    margin-bottom: 3em;
+    overflow: hidden;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper {
+    position: relative;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .owl-theme .owl-controls .owl-nav [class*=owl-] {
+    margin: 0;
+    padding: 15px 6px;
+    border-radius: 0;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .owl-carousel .owl-controls .owl-nav .owl-prev {
+    float: left;
+    position: absolute;
+    left: 0;
+    background: #2a2919;
+    margin-top: 23px;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .fa {
+    font-size: 1em;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .owl-carousel .owl-controls .owl-nav .owl-next {
+    float: right;
+    position: absolute;
+    right: 0;
+    background: #2a2919;
+    margin-top: 23px;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .button.secondary img:hover, .single-room-wrapper .room-slider-wrapper .single-r-wrapper .button.secondary img:focus {
+    opacity: 0.2;
+  }
+  
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .button.secondary img {
+    margin-right: 0.7px;
+  }
+  
+  .button {
+    transition: background-color 300ms ease-out;
+  }
+  
+  .single-room-wrapper .room-dec-wrapper {
+    width: 808px;
+  }
+  
+  .single-room-wrapper .room-dec-wrapper h2 {
+    color: #0e1322;
+    font: 2.43em/1em "Playball", sans-serif;
+    margin: 0 0 1em;
+    padding: 0;
+    position: relative;
+  }
+
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+  .single-room-wrapper .room-dec-wrapper h2:after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+    background: #a7cc38;
+    margin: 0 0 0 12px;
+  }
+  
+  .single-room-wrapper .room-dec-wrapper p {
+    color: #898989;
+    margin: 0 0 2em;
+    padding: 0;
+    font: 400 1.0715em/1.8em "Open Sans", sans-serif;
+  }
+  
+  .single-room-wrapper .room-fac-wrapper {
+    position: relative;
+  }
+  
+  .single-room-wrapper .room-fac-wrapper h2, .single-room-wrapper .room-overview h2, .single-room-wrapper .question-wrapper h2 {
+    color: #0e1322;
+    font: 2.43em/1em "Playball", sans-serif;
+    margin: 0 0 1em;
+    padding: 0;
+    position: relative;
+  }
+  
+  .single-room-wrapper .room-fac-wrapper h2:after, .single-room-wrapper .room-overview h2:after, .single-room-wrapper .question-wrapper h2:after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+    background: #a7cc38;
+    margin: 0 0 0 12px;
+  }
+  
+  .single-room-wrapper .ro-facilitie {
+    position: relative;
+  }
+  
+  .single-room-wrapper .ro-facilitie ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .single-room-wrapper .ro-facilitie ul li {
+    margin: 0 1%;
+    padding: 0;
+    width: 18%;
+    float: left;
+    border-top: 4px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    display: table;
+  }
+  
+  .single-room-wrapper .ro-facilitie ul li .facilitie-i-box {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    padding: 2em 0;
+  }
+  
+  .single-room-wrapper .ro-facilitie ul li .facilitie-i-box h3 {
+    font: 800 1em/1em "Raleway", sans-serif;
+    margin: 0 0 0.8em;
+    padding: 0;
+    text-align: center;
+    color: #0e1322;
+    text-transform: uppercase;
+  }
+  
+  .single-room-wrapper .room-overview {
+    position: relative;
+    overflow: hidden;
+    margin-top: 3em;
+  }
+  
+  .single-room-wrapper .room-overview code {
+    color: #000;
+    text-transform: uppercase;
+    background: transparent;
+    font: 700 1em/1em "Open Sans", sans-serif;
+  }
+  
+  .single-room-wrapper .room-overview .table > tbody > tr > th {
+    width: 35%;
+    padding: 13px 30px;
+    border-top: 1px solid transparent;
+  }
+  
+  .single-room-wrapper .room-overview .table > tbody > tr > td {
+    border-top: 1px solid transparent;
+    color: #898989;
+    font: 400 1.0715em/1em "Open Sans", sans-serif;
+    padding: 13px 30px;
+  }
+  
+  .single-room-wrapper .room-overview h5 {
+    font: 400 1.3em/1.5em "Open Sans", sans-serif;
+    font-style: italic;
+    padding: 0;
+    margin-bottom: 3em;
+    margin-top: 1em;
+  }
+  
+  .single-room-wrapper .question-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: #f5f4f6;
+    margin: 5em 0 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  
+  .single-room-wrapper .question-wrapper .form-control {
+    margin-bottom: 20px;
+    border-radius: 0;
+    font: 1em/1.5em "Open Sans", sans-serif;
+    color: #959595;
+    padding: 11px 20px;
+    border: 1px solid #e1e1e1;
+    height: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .room-overview a {
+    font: 600 1.3em/1.5em "Open Sans", sans-serif;
+    padding: 0.8em 2em;
+  }
