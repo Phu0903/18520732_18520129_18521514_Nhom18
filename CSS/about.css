@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+section {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+}
+
+.common-pad {
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+/* ==============================
+  Introduction -About us
+============================== */
+
+.col-content-about {
+    width: 66.66666667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sec-header3 {
+    position: relative;
+}
+
+.sec-header3 h2 {
+    color: #0e1322;
+    font: 2.43em/1em "Playball", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sec-header3 h3 {
+    color: #aaaaaa;
+    font: 400 1.15em/1.8em "Open Sans", sans-serif;
+    margin: 0 0 2.1em;
+    padding: 0;
+    font-style: italic;
+    position: relative;
+}
+
+.sec-header3 h3:after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+    background: #a7cc38;
+    margin: 0 0 0 12px;
+}
+
+.col-img-about {
+    width: 33.33333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-info-box .img-cap-effect {
+    text-align: right;
+}
+
+.about-info-box .img-box img {
+    position: relative;
+    max-width: 100%;
+}
+
+.about-info-box .img-box:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    right: 10px;
+    bottom: -10px;
+    border-left: 10px solid #ffb606;
+    border-bottom: 10px solid #ffb606;
+}
+
+.img-cap-effect .img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-info-box .img-box {
+    display: inline-block;
+    overflow: visible;
+}
+
+.img-cap-effect .img-box .img-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.img-cap-effect .img-box .img-caption:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    opacity: 1;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0;
+    border-left: 0;
+    -webkit-transition: all .5s ease .5s;
+    transition: all .5s ease .5s;
+}
+
+.about-info-box p {
+    color: #898989;
+    margin: 0 0 3em;
+    padding: 0;
+    font: 400 1.0715em "Open Sans", sans-serif;
+}
+
+.about-info-box h6 {
+    color: #6da5da;
+    font: 400 1rem 'PT Serif', serif;
+    margin: 0;
+    padding: 1.5em 0;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    font-style: italic;
+}
+
+.about-info-box ul li {
+    display: inline-block;
+    font: 400 1.2em 'PT Serif', serif;
+    color: #000;
+    font-style: italic;
+}
+
+.about-info-box ul {
+    margin: 3em 0 0;
+}
+
+.about-info-box ul li:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 23px;
+}
+
+.about-info-box ul li span {
+    padding: 0 3em 0 2em;
+    display: block;
+}
+
+.news-wrapper {
+    position: relative;
+    background: #f4f4f4;
+}
+
+.our-resort-value {
+    position: relative;
+}
+
+.col-img-resort-value {
+    width: 55%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.our-resort-value .img-l-box {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.our-resort-value .img-r-box {
+    position: relative;
+    float: left;
+}
+
+.our-resort-value .img-r-box .img-box2 {
+    float: left;
+    margin-top: 10px;
+}
+
+.our-resort-value .img-box img {
+    float: left;
+}
+
+.col-content-resort-value {
+    width: 45%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.resort-r-value {
+    position: relative;
+    margin-left: 4.5em;
+}
+
+
+/* ==============================
+  22. accrodion - about us
+============================== */
+
+.accordian-area {
+    position: relative;
+}
+
+.accordian-area .panel .panel-heading .panel-title a i {
+    font-size: 0.8em;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.accordian-area .panel .panel-heading .panel-title a .fa-plus {
+    display: none;
+}
+
+.accordian-area .panel .panel-heading .panel-title a.collapsed .fa-plus {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.accordian-area .panel .panel-heading .panel-title a .fa-minus {
+    display: block;
+    background: #85ab00;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+}
+
+.accordian-area .panel .panel-heading .panel-title a.collapsed .fa-minus {
+    display: none;
+}
+
+.accordian-area .panel-group .panel {
+    border-radius: 0;
+    background: transparent;
+}
+
+.accordian-area .panel {
+    border-radius: 0;
+}
+
+.panel-default {
+    margin-top: 10px;
+}
+
+.accordian-area .panel-default>.panel-heading {
+    background: #fff;
+    position: relative;
+    padding: 16px 10px 16px 70px;
+}
+
+.accordian-area .panel-title {
+    font: 400 0.9em "Open Sans", sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.panel-group .panel-heading {
+    border-bottom: 0;
+    border-bottom-color: currentcolor;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.list-group {
+    border-top: 1px solid #ddd;
+    border-top-color: rgb(221, 221, 221);
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.panel-title>a,
+.panel-title>small,
+.panel-title>.small,
+.panel-title>small>a,
+.panel-title>.small>a {
+    color: inherit;
+}
+
+
+/* ==============================
+  Testimonials styles
+============================== */
+
+.testimonials-sec {
+    position: relative;
+}
+
+.testimonials-wrapper .owl-theme .owl-dots .owl-dot {
+    display: none;
+}
+
+.testimonials-wrapper {
+    position: relative;
+    padding: 0;
+}
+
+.testimonials-wrapper .item {
+    position: relative;
+}
+
+.testimonials-wrapper .item .test-cont {
+    background: #f4f4f4;
+    padding: 2em;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+}
+
+.testimonials-wrapper .item .test-cont:after {
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 26px solid #f4f4f4;
+    position: absolute;
+    content: '';
+    bottom: -26px;
+}
+
+.testimonials-wrapper .item .test-cont p {
+    color: #a0a0a0;
+    font: 400 1.0175em/1.8em "Open Sans", sans-serif;
+}
+
+.testimonials-wrapper .item .test-bot {
+    padding: 3em 0 0;
+}
+
+.testimonials-wrapper .item .test-bot .tst-img {
+    float: left;
+    margin: 0 1.5em 0 0;
+}
+
+.testimonials-wrapper .item .test-bot .client_name {
+    float: left;
+    margin: 1em 0 0;
+}
+
+.testimonials-wrapper .item .test-bot .client_name h5 {
+    color: #1f4d84;
+    padding: 0 0 0.5em;
+    margin: 0;
+    font: 1.43em/1em "Playball", sans-serif;
+}
+
+.testimonials-wrapper .item .test-bot .client_name h5 span {
+    color: #3d3d3d;
+    font: 400 0.7em/1em "Open Sans", sans-serif;
+}
+
+.testimonials-wrapper .item .test-bot .client_name h5 a {
+    color: #1f4d84;
+}
+
+.testimonials-wrapper .item .test-bot .client_name h5 a:hover {
+    color: #3d3d3d;
+}
+
+.testimonials-wrapper .item .test-bot .client_name ul li {
+    display: inline-block;
+    margin: 2px -1px 0 1px;
+}
+
+.testimonials-wrapper .item .test-bot .client_name ul li a {
+    color: #707d93;
+    font-size: 1em;
+    margin: 0 0.4em 0 0;
+}
+
+.testimonial-sec-p {
+    padding: 6em 1em 1em;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.testimonial-p .media-body h3 {
+    font: 2em/1em "Playball", sans-serif;
+    letter-spacing: 0.3px;
+    color: #242424;
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+.testimonial-p .media-body p {
+    font: 400 1.0715em/1.8em "Open Sans", sans-serif;
+    letter-spacing: 0.3px;
+    color: #898989;
+    margin-bottom: 1em;
+}
+
+.testimonial-p .media-body a {
+    font: 600 1.0715em/1em "Open Sans", sans-serif;
+    letter-spacing: 0.3px;
+    color: #1f4d84;
+    font-style: italic;
+    text-align: left;
+    display: block;
+}
+
+.testimonial-p .media-body a span {
+    color: #3d3d3d;
+    font: 400 0.9em/1em "Open Sans", sans-serif;
+}
+
+.testimonial-p .media-body h6 {
+    text-align: right;
+    display: block;
+}
+
+.testimonial-p .media-left {
+    padding-right: 60px;
+}
+
+.testimonial-p .media-left a img {
+    border-left: 4px solid #ffb606;
+    border-right: 1px solid #e1e1e1;
+    border-top: 2px solid #ffb606;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.testimonial-p .m-right {
+    float: right;
+    padding-right: 0;
+    padding-left: 60px;
+}
+
+.testimonial-p .m-left {
+    float: left;
+    width: 82%;
+}
+
+.testimonial-p .l-sign {
+    float: left;
+}
+
+.common-pad-test {
+    padding-top: 0em;
+    padding-bottom: 6.4em;
+}
+
+@media (max-width: 479px) {
+    .testimonial-p .media-left {
+        display: block;
+        text-align: center;
+        padding-right: 0;
+    }
+    .testimonial-p .media-body h3 {
+        padding: 1em 0 0;
+    }
+}
+
+.owl-stage {
+    /* transform: translate3d(0px, 0px, 0px); */
+    width: 5400px;
+}
+
+.owl-stage .item {
+    transition: all 3s ease 0s;
+}
+
+.owl-stage:hover .item {
+    transform: translate3d(-1200px, 0px, 0px);
+}
