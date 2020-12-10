@@ -147,6 +147,24 @@ $("#login-box-link").click(function(){
   $("#login-box-link").addClass("active");
   $("#signup-box-link").removeClass("active");
 });
+$(function () {
+    $('#login').click(function (e) { 
+      //xử lý class
+      $('.dangnhap').addClass('noidunghienra');
+      //xử lý class cho nền
+      $('.lot').addClass('lothienra');
+      $('body').css("overflow-y" ,"hidden");
+        
+    });
+    $('.lot').click(function (e) { 
+        $('.dangnhap').removeClass('noidunghienra');
+        $('.lot').removeClass('lothienra');
+        $('body').css("overflow-y" ,"scroll");
+        console.log(1);
+        
+    });
+  
+  });
 
 
 
