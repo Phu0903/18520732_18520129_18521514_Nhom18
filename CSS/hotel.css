@@ -1,7 +1,7 @@
 #hotel_list {
     padding: 125px 0;
     padding-top: 25px;
-    background-color: aliceblue;
+    background-color: #f9f7f1;
 }
 
 .hotel_title {
@@ -11,7 +11,7 @@
 .hotel_title h2 {
     margin-top: 10px;
     font-weight: 1000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     color: black;
 }
