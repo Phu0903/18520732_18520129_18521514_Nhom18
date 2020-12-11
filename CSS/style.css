@@ -292,6 +292,9 @@ header.header {
   display: inline-block;
   margin-right: 40px;
 }
+li.main_nav_item.active > a {
+  color: var(--color-5)
+}
 .header_logo img {
   margin-right: 9px;
 }
