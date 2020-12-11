@@ -42,11 +42,6 @@ $(window).scroll(function(e){
 
     }
 })
-
-
-
-
-
 //slider//
 $('.home_slider_owl .owl-carousel').owlCarousel({
     navigation : true,
@@ -93,19 +88,6 @@ $('.Hotels .owl-carousel').owlCarousel({
     }
 })
 
-//Text-svg//
-
-var cdtimeline = anime.timeline();
-cdtimeline.add({
-    targets:'.text_svg g path',
-    strokeDashoffset:[anime.setDashoffset,0],
-    duration:2000,
-  
-    easing:'easeOutSine',
-    direction:'alternate',
-    loop:true
-})
-
 //counter js 
 
 const counters = document.querySelectorAll('.counter-count');
@@ -134,39 +116,75 @@ $(window).scroll(function(e){
 })
 
 //-----Login-------//
-$(".email-signup").hide();
-$("#signup-box-link").click(function(){
-  $(".email-login").fadeOut(100);
-  $(".email-signup").delay(100).fadeIn(100);
-  $("#login-box-link").removeClass("active");
-  $("#signup-box-link").addClass("active");
-});
-$("#login-box-link").click(function(){
-  $(".email-login").delay(100).fadeIn(100);;
-  $(".email-signup").fadeOut(100);
-  $("#login-box-link").addClass("active");
-  $("#signup-box-link").removeClass("active");
-});
+
 $(function () {
     $('#login').click(function (e) { 
+        $(".email-signup").hide();
+        $("#signup-box-link").click(function(){
+          $(".email-login").fadeOut(100);
+          $(".email-signup").delay(100).fadeIn(100);
+          $("#login-box-link").removeClass("active");
+          $("#signup-box-link").addClass("active");
+        });
+        $("#login-box-link").click(function(){
+          $(".email-login").delay(100).fadeIn(100);;
+          $(".email-signup").fadeOut(100);
+          $("#login-box-link").addClass("active");
+          $("#signup-box-link").removeClass("active");
+        });
       //xử lý class
       $('.dangnhap').addClass('noidunghienra');
       //xử lý class cho nền
       $('.lot').addClass('lothienra');
       $('body').css("overflow-y" ,"hidden");
-        
     });
     $('.lot').click(function (e) { 
         $('.dangnhap').removeClass('noidunghienra');
         $('.lot').removeClass('lothienra');
         $('body').css("overflow-y" ,"scroll");
-        console.log(1);
-        
     });
-  
   });
+  $(function () {
+    $('#Register').click(function (e) { 
+        $(".email-login").hide();
+        $("#signup-box-link").click(function(){
+            $(".email-login").fadeOut(100);
+               $(".email-signup").delay(100).fadeIn(100);
+              $("#login-box-link").removeClass("active");
+              $("#signup-box-link").addClass("active");
+            });
+        $("#login-box-link").click(function(){
+             $(".email-login").delay(100).fadeIn(100);;
+               $(".email-signup").fadeOut(100);
+              $("#login-box-link").addClass("active");
+              $("#signup-box-link").removeClass("active");
+            });
+        
+      //xử lý class
+      $('.dangnhap').addClass('noidunghienra');
+      //xử lý class cho nền
+      $('.lot').addClass('lothienra');
+      $('body').css("overflow-y" ,"hidden");
+    });
+    $('.lot').click(function (e) { 
+        $('.dangnhap').removeClass('noidunghienra');
+        $('.lot').removeClass('lothienra');
+        $('body').css("overflow-y" ,"scroll");
+    });
+  });
+  ///--------End Login------------//
 
+//Text-svg//
 
+var cdtimeline = anime.timeline();
+cdtimeline.add({
+    targets:'.text_svg g path',
+    strokeDashoffset:[anime.setDashoffset,0],
+    duration:2000,
+    easing:'easeOutSine',
+    direction:'alternate',
+    loop:true
+})
 
 
 
