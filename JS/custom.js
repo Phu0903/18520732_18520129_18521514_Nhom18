@@ -95,7 +95,6 @@ const speed = 1000;
 var temp = 1 ; 
 $(window).scroll(function(e){
     var vitri_1=$('body,html').scrollTop()
-    console.log(vitri_1);
     if (vitri_1 >1000)
     {
         counters.forEach(counter => {

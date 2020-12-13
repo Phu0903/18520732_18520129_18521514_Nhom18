@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
 .sec-header {
     position: relative;
     display: table;
@@ -7,14 +7,13 @@
 
 .sec-header h2 {
     color: #0e1322;
-    font: 2.43em/1em "Playball", sans-serif;
-    margin: 0;
+   
     padding: 0;
 }
 
 .sec-header h3 {
     color: #aaaaaa;
-    font: 400 1.15em/1.8em "Open Sans", sans-serif;
+   
     margin: 0 0 2.7em;
     padding: 0;
     font-style: italic;
@@ -75,13 +74,13 @@ section.row {
     padding: 0.25em;
     padding-left: 0.17em;
     margin: 0;
-    font: 3.15em/1em "Playball", sans-serif;
+   
     text-align: center;
 }
 
 .img-holder .overlay p span {
     color: #fff;
-    font: 0.64em/1em "Playball", sans-serif;
+
     display: block;
 }
 
@@ -92,7 +91,7 @@ section.row {
 
 .voucher-content h2 {
     color: #0e1322;
-    font: 2.43em/1em "Playball", sans-serif;
+  
     margin: 0 0 0.6em;
     padding: 0;
     position: relative;
@@ -102,7 +101,7 @@ section.row {
     color: #898989;
     margin: 0 0 3em;
     padding: 0;
-    font: 400 1.0715em/1.8em "Open Sans", sans-serif;
+  
 }
 
 .voucher-content {
@@ -140,14 +139,14 @@ section.row {
 
 .voucher-b-price p {
     color: #242424;
-    font: 2em/0.9em "Playball", sans-serif;
+
     padding: 0 0 0;
     margin: 0;
 }
 
 .voucher-b-price p span {
     display: block;
-    font: 400 0.53em/1.3em "Open Sans", sans-serif;
+    
     font-style: italic;
     color: #888;
 }
