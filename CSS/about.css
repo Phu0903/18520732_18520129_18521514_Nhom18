@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 section {
     display: block;
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .common-pad {
@@ -51,7 +50,6 @@ section {
 
 .sec-header3 h3 {
     color: #aaaaaa;
-    font: 400 1.15em/1.8em "Open Sans", sans-serif;
     margin: 0 0 2.1em;
     padding: 0;
     font-style: italic;
@@ -437,14 +435,12 @@ section {
 }
 
 .testimonial-p .media-body p {
-    font: 400 1.0715em/1.8em "Open Sans", sans-serif;
     letter-spacing: 0.3px;
     color: #898989;
     margin-bottom: 1em;
 }
 
 .testimonial-p .media-body a {
-    font: 600 1.0715em/1em "Open Sans", sans-serif;
     letter-spacing: 0.3px;
     color: #1f4d84;
     font-style: italic;
@@ -454,7 +450,6 @@ section {
 
 .testimonial-p .media-body a span {
     color: #3d3d3d;
-    font: 400 0.9em/1em "Open Sans", sans-serif;
 }
 
 .testimonial-p .media-body h6 {
@@ -504,15 +499,14 @@ section {
     }
 }
 
-.owl-stage {
-    /* transform: translate3d(0px, 0px, 0px); */
-    width: 5400px;
-}
-
-.owl-stage .item {
-    transition: all 3s ease 0s;
-}
-
-.owl-stage:hover .item {
-    transform: translate3d(-1200px, 0px, 0px);
+.prev-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 120px;
+    left: -50px;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid;
 }
