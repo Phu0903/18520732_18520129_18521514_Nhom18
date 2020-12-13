@@ -20,27 +20,7 @@
     font-family: "Times New Roman", Times, serif;
     
   }
-.home{
-    width: 100%;
-    height: 465px;
-}
-.home_background{
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-}
-.over_lay_2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    background: rgb(0, 0, 0);
-    opacity: .2;
-    height: 465px;
-}
+
 .content_round{
     width: 100%;
     background: white;
