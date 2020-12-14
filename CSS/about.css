@@ -7,8 +7,8 @@ section {
 }
 
 .common-pad {
-    padding-top: 7em;
-    padding-bottom: 7em;
+    padding-top: 30px;
+    padding-bottom: 4em;
 }
 
 .container {
@@ -43,7 +43,7 @@ section {
 
 .sec-header3 h2 {
     color: #0e1322;
-    font: 2.43em/1em "Playball", sans-serif;
+    font: 3.43em/1em "Playball", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -136,7 +136,7 @@ section {
     color: #898989;
     margin: 0 0 3em;
     padding: 0;
-    font: 400 1.0715em "Open Sans", sans-serif;
+    font: 400 1.0715em;
 }
 
 .about-info-box h6 {
@@ -335,6 +335,8 @@ section {
   Testimonials styles
 ============================== */
 
+
+/* 
 .testimonials-sec {
     position: relative;
 }
@@ -509,4 +511,12 @@ section {
     font-size: 20px;
     font-weight: bolder;
     border: 1px solid;
+} */
+
+.sm {
+    padding-top: 0;
+}
+
+.card__background {
+    width: 320px;
 }
