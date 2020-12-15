@@ -7,28 +7,24 @@
 
 .sec-header h2 {
     color: #0e1322;
-   
-    padding: 0;
-}
 
-.sec-header h3 {
-    color: #aaaaaa;
-   
-    margin: 0 0 2.7em;
-    padding: 0;
-    font-style: italic;
-    position: relative;
 }
 
 .voucher-main {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .voucher-dark-theme {
     position: relative;
     overflow: hidden;
     background: #f6f6f8;
+}
+
+.voucher-light-theme {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
 }
 
 section.row,
@@ -42,14 +38,79 @@ section.row {
     position: relative;
 }
 
+
+/* favortite places */
+
+.favorite-places-header h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.places-cover:hover {
+    transform: scale(1.05);
+    transition: all .1s ease-in;
+}
+
+.favorite-places {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.col-favorite-places {
+    margin: 10px 10px;
+}
+
+.places-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.places-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient( to top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.place-info {
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.place-info h3,
+.place-info span {
+    color: #ffffff;
+}
+
+.hot-voucher-list {
+    padding-bottom: 100px;
+}
+
 .img-responsive {
     width: 100%;
 }
 
 .img-holder {
-    width: 42.66666667%;
+    width: 25%;
     position: relative;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .img-holder .overlay {
@@ -58,15 +119,11 @@ section.row {
     right: -10%;
     border-radius: 100%;
     border: 5px solid #fff;
-    background: #85ab00;
-    width: 120px;
-    height: 120px;
+    background: #fd7e14;
+    width: 80px;
+    height: 80px;
     text-align: center;
     margin-top: 50px;
-}
-
-.img-holder .col-pink {
-    background: #d16094;
 }
 
 .img-holder .overlay p {
@@ -74,8 +131,9 @@ section.row {
     padding: 0.25em;
     padding-left: 0.17em;
     margin: 0;
-   
+
     text-align: center;
+    font-weight: bold;
 }
 
 .img-holder .overlay p span {
@@ -85,28 +143,35 @@ section.row {
 }
 
 .voucher-content {
-    width: 57.333333333%;
-    padding: 40px 0 0;
+    width: 75%;
+    padding: 10px 0 0;
 }
 
 .voucher-content h2 {
     color: #0e1322;
-  
     margin: 0 0 0.6em;
     padding: 0;
     position: relative;
 }
 
 .voucher-content p {
-    color: #898989;
+    color: #4d4d4d;
     margin: 0 0 3em;
     padding: 0;
-  
 }
 
 .voucher-content {
     position: relative;
-    padding-left: 8em;
+    padding-left: 4em;
+}
+
+.rating-stars span {
+    color: #ffda07;
+}
+
+.rating-stars .count-rating {
+    color: #9e9e9e;
+    margin-left: 10px;
 }
 
 .voucher-b-main {
@@ -115,21 +180,19 @@ section.row {
 
 .voucher-b-but {
     float: left;
+    margin-top: 60px;
 }
 
 .voucher-b-but .res-btn {
-    background: #85ab00;
+    background: #fd7e14;
     padding: 0.5em 1.7em;
     color: #fff;
+    border-radius: 12px;
 }
 
 .voucher-b-but .res-btn:hover {
-    background: #ffb606;
+    background: #85ab00;
     color: #fff;
-}
-
-.voucher-b-but .col-pink {
-    background: #d16094;
 }
 
 .voucher-b-price {
@@ -141,11 +204,29 @@ section.row {
     color: #242424;
     padding: 0 0 0;
     margin: 0;
+    font-size: 48px;
 }
 
 .voucher-b-price p span {
     display: block;
-    
     font-style: italic;
     color: #888;
+    font-size: 14px;
+}
+
+.btn-more-voucher button {
+    width: 150px;
+    height: 40px;
+    background-color: #85ab00;
+    color: #ffffff;
+    border: 1px solid;
+    border-radius: 24px;
+    font-size: 24px;
+    position: absolute;
+    right: 40px;
+}
+
+.btn-more-voucher:hover button {
+    background-color: #fd7e14;
+    transform: scale(1.1);
 }
