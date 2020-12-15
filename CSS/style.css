@@ -292,6 +292,9 @@ header.header {
   display: inline-block;
   margin-right: 40px;
 }
+li.main_nav_item.active > a {
+  color: var(--color-5)
+}
 .header_logo img {
   margin-right: 9px;
 }
@@ -1104,3 +1107,39 @@ span.tes_cmt {
   transition: 0.5s;
   background: #fff;
 }
+
+
+
+/*header background*/
+/* page detail */
+.home{
+  width: 100%;
+  height: 465px;
+}
+.home_background{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+.over_lay_2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: rgb(0, 0, 0);
+  opacity: .2;
+  height: 465px;
+}
+.sec-header3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 350px;
+  margin-right: 350px;
+  height: 3em;
+  font-size: 20px;
+}
+/* end header background*/
+

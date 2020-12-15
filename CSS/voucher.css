@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
 .sec-header {
     position: relative;
     display: table;
@@ -7,10 +7,7 @@
 
 .sec-header h2 {
     color: #0e1322;
-    margin: 0;
-    padding: 0;
-    font-size: 48px;
-    text-align: center;
+
 }
 
 .voucher-main {
@@ -134,13 +131,14 @@ section.row {
     padding: 0.25em;
     padding-left: 0.17em;
     margin: 0;
-    font-size: 21px;
+
     text-align: center;
     font-weight: bold;
 }
 
 .img-holder .overlay p span {
     color: #fff;
+
     display: block;
 }
 
@@ -151,7 +149,6 @@ section.row {
 
 .voucher-content h2 {
     color: #0e1322;
-    font: 2.43em/1em;
     margin: 0 0 0.6em;
     padding: 0;
     position: relative;

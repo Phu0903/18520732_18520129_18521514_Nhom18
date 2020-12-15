@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Travelix</title>
+  <title>Hotel</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,11 +22,60 @@
 
 <body>
 
+ 
+  <!--------Login------->
+  <div class="dangnhap" id="dangnhap">
+    <div class="login-box">
+      <div class="lb-header">
+        <a href="#" class="active" id="login-box-link">Login</a>
+        <a href="#" id="signup-box-link">Sign Up</a>
+      </div>
+      <div class="social-login">
+        <a href="#">
+          <i class="fa fa-facebook fa-lg"></i>
+          Login in with facebook
+        </a>
+        <a href="#">
+          <i class="fa fa-google-plus fa-lg"></i>
+          log in with Google
+        </a>
+      </div>
+      <form class="email-login">
+        <div class="u-form-group">
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="u-form-group">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="u-form-group">
+          <button>Log in</button>
+        </div>
+        <div class="u-form-group">
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+      </form>
+      <form class="email-signup">
+        <div class="u-form-group">
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="u-form-group">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="u-form-group">
+          <input type="password" placeholder="Confirm Password" />
+        </div>
+        <div class="u-form-group">
+          <button>Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="lot"></div>
   <!--slide nav-->
-  <div id="super_container" class="super_container">
+  <div class="super_container">
     <header class="header">
-      <div id="top-bar" class="top-bar">
-        <div id="header_container" class="container header_container">
+      <div class="top-bar">
+        <div class="container header_container">
           <div class="row row_header_container">
             <div class="phone"> <a href="tel:0852578535">0852578535</a> </div>
             <div class="social">
@@ -41,8 +90,8 @@
             </div>
             <div class="user_right">
               <div class="user_box">
-                <div class="user_box_login user_box_link"><a href="">Login</a></div>
-                <div class="user_box_register user_box_link"><a href="">Register</a></div>
+                <div class="user_box_login user_box_link"><a id="login">Login</a></div>
+                <div class="user_box_register user_box_link"><a id="Register">Register</a></div>
               </div>
             </div>
           </div>
@@ -55,16 +104,12 @@
             <div class="menu-navigation">
               <ul class="nav_list">
                 <li class="main_nav_item"> <a href="index.html">HOME</a> </li>
-
-                <li class="main_nav_item"> <a href="tours.html">TOURS</a> </li>
-
-                <li class="main_nav_item"> <a href="tours.html">tours</a> </li>
-
-                <li class="main_nav_item"> <a href="hotels.html">HOTELS</a> </li>
-                <li class="main_nav_item"> <a href="services.html">SERVICES</a> </li>
-                <li class="main_nav_item"> <a href=""> VOUCHOER</a></li>
-                <li class="main_nav_item"> <a href="">BLOG </a> </li>
-                <li class="main_nav_item"> <a href=""> ABOUT</a></li>
+                <li class="main_nav_item  "> <a href="tours.html">TOURS</a> </li>
+                <li class="main_nav_item active"> <a href="hotels.html">HOTELS</a> </li>
+                <li class="main_nav_item "> <a href="services.html">SERVICES</a> </li>
+                <li class="main_nav_item"> <a href="voucher.html"> VOUCHOER</a></li>
+                <li class="main_nav_item"> <a href="blog.html">BLOG </a> </li>
+                <li class="main_nav_item "> <a href="about.html"> ABOUT</a></li>
                 <li class="main_nav_item"><a href="">CONTACT</a></li>
               </ul>
             </div>
@@ -281,10 +326,6 @@
       <!----owl carousel-->
       <script src="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js"></script>
       <script src="JS/custom.js"></script>
-      <script>
-    
-    
-    
-      </script>
+      <script src="JS/anime.js"></script>
     
     </html>
