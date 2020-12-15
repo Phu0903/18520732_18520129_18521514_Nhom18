@@ -1,0 +1,21 @@
+.form_colorlib_contact{
+    width: 100%;
+}
+
+.form_contact label{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form_colorlib_contact h2{
+    text-align: center;
+}
+input[type="text"]{
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
