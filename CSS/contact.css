@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/Font\ Awesome\ 5\ Brands-Regular-400.otf");
+  }
+:root {
+    --color_1: #8333e9;
+    --color_2: #000000;
+    --color_3: #f9f7f1;
+    --color_4: rgba(49, 18, 75, 0.8);
+    --color-5: #fa9e1b;
+  }
+  .btn-join{
+    height: 50px;
+    width: 150px;
+    background-color: var(--color-5);
+    color: var(--color_3);
+    border: 0;
+    border-radius: 8px;
+    right: 100px;
+  }
+.form_contact{
+    margin-bottom: 30px;
+}
+.form_colorlib_contact{
+    width: 100%;
+}
+
+.form_contact label{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.icon-location-contact:before {
+    content: "\f041";
+    font-family: FontAwesome;
+}
+.icon-phone-contact:before{
+   content: "\f095";
+   font-family:FontAwesome ;
+}
+.icon-plane-contact::before{
+    content: "\f1d8";
+    font-family: FontAwesome ;
+}
+.icon-phone-globe::before{
+    content: "\f108";
+    font-family: FontAwesome ;
+}
+#map{
+    padding-top: 2em;
+    height: 500px;
+    width: 100%;
+}
