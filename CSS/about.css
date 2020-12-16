@@ -1,28 +1,9 @@
  section {
-     display: block;
- }
+
  
- .container {
-     max-width: 1200px;
- }
- 
- .common-pad {
-     padding-top: 30px;
-     padding-bottom: 4em;
- }
- 
- .container {
-     margin-right: auto;
-     margin-left: auto;
-     padding-left: 15px;
-     padding-right: 15px;
- }
- 
- .row {
-     margin-left: -15px;
-     margin-right: -15px;
- }
- /* ==============================
+
+/* ==============================
+
   Introduction -About us
 ============================== */
  
