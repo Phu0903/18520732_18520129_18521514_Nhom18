@@ -14,6 +14,7 @@
   <!--owl carousel -->
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--Main Css-->
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/contact.css">
@@ -136,42 +137,42 @@
   <div class="colorlib-contact sm">
     <div class="container">
       <div class="row">
-        <div class="form_colorlib_contact">
-          <h2>Get in touch</h2>
+        <div  class="form_colorlib_contact">
+          <h2  data-aos="fade-up"  data-aos-duration="800">Get in touch</h2>
           <div class="form">
             <form action="#">
-              <div class="form_contact">
+              <div  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="form_contact">
                 <label for="fname">First Name</label>
                 <input type="text" class="form-control" id="fname" name="fname" placeholder="Your first name">
               </div>
-              <div class="form_contact">
+              <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"  class="form_contact">
                 <label for="lname">Last Name</label>
                 <input type="text" class="form-control" id="fname" name="fname" placeholder="Your last name">
               </div>
-              <div class="form_contact">
+              <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"  class="form_contact">
                 <label for="email">Email</label>
                 <input type="text" class="form-control" id="fname" name="fmail" placeholder="Your email address">
               </div>
-              <div class="form_contact">
+              <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"  class="form_contact">
                 <label for="Subject">Subject</label>
                 <input type="text" class="form-control" id="fsubject" name="fsubject"
                   placeholder="Your subject of this message">
               </div>
-              <div class="form_contact">
+              <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"  class="form_contact">
                 <label for="message">Message</label>
                 <textarea name="fmess" id="fmess" cols="30" rows="5" class="form-control"
                   placeholder="Say something about us"></textarea>
               </div>
-              <div class="form_contact text-center">
+              <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"  class="form_contact text-center">
                 <input type="submit" value="Send Message" class="btn btn-join">
               </div>
             </form>
           </div>
         </div>
         <div class="Contact_Infor container">
-          <h2>Contact Information</h2>
+          <h2 data-aos="fade-up"  data-aos-duration="800">Contact Information</h2>
           <div class="Contact_infor-wrap row">
-            <div class="col-3">
+            <div data-aos="fade-up"  data-aos-duration="800" class="col-3">
               <p class="text-center">
                 <span>
                   <i class="icon-location-contact"></i>
@@ -180,7 +181,7 @@
                 <br> Quận 3, Tp. Hồ Chí Minh, Việt Nam
               </p>
             </div>
-            <div class="col-3">
+            <div data-aos="fade-up"  data-aos-duration="800" class="col-3">
               <p class="text-center">
                 <span>
                   <i class="icon-phone-contact"></i>
@@ -188,7 +189,7 @@
                 0852578535
               </p>
             </div>
-            <div class="col-3">
+            <div data-aos="fade-up"  data-aos-duration="800" class="col-3">
               <p class="text-center">
                 <span>
                   <i class="icon-plane-contact"></i>
@@ -196,7 +197,7 @@
                 trevalix@gmail.com.vn
               </p>
             </div>
-            <div class="col-3">
+            <div data-aos="fade-up"  data-aos-duration="800" class="col-3">
               <p class="text-center">
                 <span>
                   <i class="icon-phone-globe"></i>
@@ -206,7 +207,7 @@
             </div>
           </div>
         </div>
-        <div id="map">
+        <div data-aos="fade-up"  data-aos-duration="800" id="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2324288146733!2d106.80161941446626!3d10.86991839225812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2sUniversity%20of%20Information%20Technology%20VNU-HCM!5e0!3m2!1sen!2s!4v1608021133602!5m2!1sen!2s"
             width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
@@ -217,7 +218,7 @@
   </div>
 
   <!-- footer -->
-  <footer class="content-footer container-fluid">
+  <footer  data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" class="content-footer container-fluid">
     <!--  container  -->
     <div class="footer_container ">
       <div class="row footer_container_row">
@@ -298,6 +299,10 @@
     crossorigin="anonymous"></script>
   <!----owl carousel-->
   <script src="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   <script src="JS/anime.js"></script>
   <script src="JS/custom.js"></script>
 
