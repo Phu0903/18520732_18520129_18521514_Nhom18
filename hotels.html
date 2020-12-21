@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--Main Css-->
   <link rel="stylesheet" href="CSS\style.css">
+  <link rel="stylesheet" href="CSS/detailHotel.css">
   <link rel="stylesheet" href="CSS/hotel.css">
   <link rel="stylesheet" href="CSS/services.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -136,110 +137,161 @@
   <!-- hotels list -->
   <div id="hotel_list">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-1.jpg" alt="" >
-            </a>
-          </div>
-          
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-2.jpg" alt="" >
-            </a>
-          </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-3.jpg" alt="" >
-            </a>
-          </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-4.jpg" alt="" >
-            </a>
-          </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-5.jpg" alt="" >
-            </a>
-          </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-6.jpg" alt="" >
-            </a>
-          </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-7.jpg" alt="" >
-            </a>
-          </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-8.jpg" alt="" >
-            </a>
-          </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
+      <class class="row">
+        <div class="col-md-4  form">
+          <div class="single-sidebar-widget sroom-sidebar">
+            <!-- Booking Form style-->
+            <div class="book-r-form">
+              <div class="room-price">
+                <h6>starting from</h6>
+                <p>$299<span>/ day</span></p>
+              </div>
+              <div class="book-form">
+                <div class="col-md-12"><b>Arrive</b>
+                  <input placeholder="Arival Date" type="text" class="form-control datepicker-example8">
+                </div>
+                <div class="col-md-12"><b>Departure</b>
+                  <input type="text" placeholder="Departure Date" class="form-control datepicker-example8">
+                </div>
+                <div class="col-md-12"><b>Adults</b>
+                  <div class="select-option">
+                    <select name="Menu" id="" class="menu-select">
+                      <option value="default">Adults</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12"><b>children</b>
+                  <div class="select-option">
+                    <select name="Menu" id="" class="menu-select">
+                      <option value="default">Children</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="chk-button">
+                    <button type="submit" class="res-btn">Check Availability</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Booking Form style-->
+            <!-- Budget Rooms style-->
+            <div class="single-sidebar-widget-outer">
+              <div class="sec-title">
+                <h2>Budget </h2>
+              </div>
+              <div class="popular-post">
+                <ul>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/4.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>Economy room</h4></a>
+                      <h6>$199 <span>Per Night</span></h6>
+                    </div>
+                  </li>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/5.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>Garden family room</h4></a>
+                      <h6>$79 <span>Per Night</span></h6>
+                    </div>
+                  </li>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/6.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>double Deluxe room</h4></a>
+                      <h6>$235 <span>Per Night</span></h6>
+                    </div>
+                  </li>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/7.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>super Deluxe room</h4></a>
+                      <h6>$185 <span>Per Night</span></h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Budget Rooms style-->
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="hotel_media">
-            <a href="detailHotel.html">
-              <img src="img/tours/tour-9.jpg" alt="" >
-            </a>
+        <div class="col-md-4 ">
+          <div class="col-md-12">
+            <div class="hotel_media">
+              <a href="detailHotel.html">
+                <img src="img/tours/tour-4.jpg" alt="" >
+              </a>
+            </div>
+            <div class="hotel_desc">
+              <h3 align="center">Min Plaza</h3>
+              <p>The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre. Available services include Voip telephone – ideal for low-cost international calls.</p>
+            </div>
           </div>
-          <div class="hotel_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
+          <div class="col-md-12">
+            <div class="hotel_media">
+              <a href="detailHotel.html">
+                <img src="img/tours/tour-5.jpg" alt="" >
+              </a>
+            </div>
+            <div class="hotel_desc">
+              <h3 align="center">Hoang Gia</h3>
+              <p>The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre. Available services include Voip telephone – ideal for low-cost international calls.</p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="hotel_media">
+              <a href="detailHotel.html">
+                <img src="img/tours/tour-6.jpg" alt="" >
+              </a>
+            </div>
+            <div class="hotel_desc">
+              <h3 align="center">Victoria</h3>
+              <p>The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre. Available services include Voip telephone – ideal for low-cost international calls.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="col-md-12">
+            <div class="hotel_media">
+              <a href="detailHotel.html">
+                <img src="img/tours/tour-1.jpg" alt="" >
+              </a>
+            </div>
+            <div class="hotel_desc">
+              <h3 align="center">Tam Nam</h3>
+              <p>The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre. Available services include Voip telephone – ideal for low-cost international calls.</p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="hotel_media">
+              <a href="detailHotel.html">
+                <img src="img/tours/tour-8.jpg" alt="" >
+              </a>
+            </div>
+            <div class="hotel_desc">
+              <h3 align="center">Emecyr</h3>
+              <p>The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre. Available services include Voip telephone – ideal for low-cost international calls.</p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="hotel_media">
+              <a href="detailHotel.html">
+                <img src="img/tours/tour-9.jpg" alt="" >
+              </a>
+            </div>
+            <div class="hotel_desc">
+              <h3 align="center">Phu Quoc</h3>
+              <p>The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre. Available services include Voip telephone – ideal for low-cost international calls.</p>
+            </div>
           </div>
         </div>
       </div>
