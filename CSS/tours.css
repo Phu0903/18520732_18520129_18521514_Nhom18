@@ -21,6 +21,9 @@
     /* width: 400px; */
 }
 
+.column1{
+    padding-right: 100px;
+}
 
 .col-md-4{
     margin-left: 0px;
@@ -49,7 +52,12 @@
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 
-
+.book-r-form .room-price p {
+    color: #141313;
+    font: 1.6em/1em 'Times New Roman', Times, serif;
+    margin: 0.6em 0 0;
+    padding: 0;
+}
 
 #tours_list .tour_desc {
     margin: 10px 10px 20px;
