@@ -13,10 +13,12 @@
   <!--owl carousel -->
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--Main Css-->
   <link rel="stylesheet" href="CSS\style.css">
-  <link rel="stylesheet" href="CSS/tours.css">
   <link rel="stylesheet" href="CSS/services.css">
+  <link rel="stylesheet" href="CSS/detail.css">
+  <link rel="stylesheet" href="CSS/tours.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
@@ -137,109 +139,189 @@
   <div id="tours_list">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <div class="tour_media" >
-            <a href="detail.html">
-              <img src="img/tours/tour-1.jpg" alt="" >
+        <div class="col-md-4 col-md-push-8 form">
+          <div class="single-sidebar-widget sroom-sidebar">
+            <!-- Booking Form style-->
+            <div class="book-r-form">
+              <div class="room-price">
+                <h6>Find Your Tour</h6>
+              </div>
+              <div class="book-form">
+                <div class="col-md-12"><b>Location</b>
+                  <input placeholder="Search Location" type="text" class="form-control datepicker-example8">
+                </div>
+                <div class="col-md-12"><b>Check-in Date</b>
+                  <input type="text" placeholder="Check-in Date" class="form-control datepicker-example8">
+                </div>
+                <div class="col-md-12"><b>Check-out Date</b>
+                  <input type="text" placeholder="Check-out Date" class="form-control datepicker-example8">
+                </div>
+                <div class="col-md-12"><b>Guest</b>
+                  <div class="select-option">
+                    <select name="Menu" id="" class="menu-select">
+                      <option value="default">Guest</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="chk-button">
+                    <button type="submit" class="res-btn">Find Flights</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Booking Form style-->
+            <!-- Budget Rooms style-->
+            <div class="single-sidebar-widget-outer">
+              <div class="sec-title">
+                <h2>Budget </h2>
+              </div>
+              <div class="popular-post">
+                <ul>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/4.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>Economy tour</h4></a>
+                      <h6>$199 <span>Per Person</span></h6>
+                    </div>
+                  </li>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/5.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>Garden family tour</h4></a>
+                      <h6>$79 <span>Per Person</span></h6>
+                    </div>
+                  </li>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/6.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>double Deluxe tour</h4></a>
+                      <h6>$235 <span>Per Person</span></h6>
+                    </div>
+                  </li>
+                  <li class="img-cap-effect">
+                    <div class="img-box"><a href="news-details.html"><img src="img/detail/7.jpg" alt=""></a></div>
+                    <div class="content"><a href="#">
+                        <h4>super Deluxe tour</h4></a>
+                      <h6>$185 <span>Per Person</span></h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Budget Rooms style-->
+          </div>
+        </div>
+        <div class="col-md-4 column1">
+          <div class="col-md-12">
+            <a href="detail.html" class="block-5">
+              <div class="card__background" style="background-image: url('img/booking/tour-2.jpg')">
+                <div class="Des_text">
+                  <span class="price">$399</span>
+                  <h3 class="heading">Tour in Maldives</h3>
+                  <div class="post-meta">
+                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                  </div>
+                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                    <span>500 reviews</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-12">
+            <a href="detail.html" class="block-5">
+              <div class="card__background" style="background-image: url('img/booking/tour-3.jpg')">
+                <div class="Des_text">
+                  <span class="price">$399</span>
+                  <h3 class="heading">Tour in Maldives</h3>
+                  <div class="post-meta">
+                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                  </div>
+                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                    <span>500 reviews</span>
+                  </p>
+                </div>
+              </div>
             </a>
           </div>
           
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-2.jpg" alt="" >
+          <div class="col-md-12">
+            <a href="detail.html" class="block-5">
+              <div class="card__background" style="background-image: url('img/booking/tour-4.jpg')">
+                <div class="Des_text">
+                  <span class="price">$399</span>
+                  <h3 class="heading">Tour in Maldives</h3>
+                  <div class="post-meta">
+                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                  </div>
+                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                    <span>500 reviews</span>
+                  </p>
+                </div>
+              </div>
             </a>
           </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
         </div>
-        
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-3.jpg" alt="" >
+        <div class="col-md-4 ">
+          <div class="col-md-12">
+            <a href="detail.html" class="block-5">
+              <div class="card__background" style="background-image: url('img/booking/tour-5.jpg')">
+                <div class="Des_text">
+                  <span class="price">$399</span>
+                  <h3 class="heading">Tour in Maldives</h3>
+                  <div class="post-meta">
+                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                  </div>
+                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                    <span>500 reviews</span>
+                  </p>
+                </div>
+              </div>
             </a>
           </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-4.jpg" alt="" >
+          <div class="col-md-12">
+            <a href="detail.html" class="block-5">
+              <div class="card__background" style="background-image: url('img/booking/tour-6.jpg')">
+                <div class="Des_text">
+                  <span class="price">$399</span>
+                  <h3 class="heading">Tour in Maldives</h3>
+                  <div class="post-meta">
+                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                  </div>
+                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                    <span>500 reviews</span>
+                  </p>
+                </div>
+              </div>
             </a>
           </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-5.jpg" alt="" >
+          
+          <div class="col-md-12">
+            <a href="detail.html" class="block-5">
+              <div class="card__background" style="background-image: url('img/booking/tour-7.jpg')">
+                <div class="Des_text">
+                  <span class="price">$399</span>
+                  <h3 class="heading">Tour in Maldives</h3>
+                  <div class="post-meta">
+                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                  </div>
+                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                    <span>500 reviews</span>
+                  </p>
+                </div>
+              </div>
             </a>
-          </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-6.jpg" alt="" >
-            </a>
-          </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-7.jpg" alt="" >
-            </a>
-          </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-8.jpg" alt="" >
-            </a>
-          </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="tour_media">
-            <a href="detail.html">
-              <img src="img/tours/tour-9.jpg" alt="" >
-            </a>
-          </div>
-          <div class="tour_desc">
-            <h3 align="center">Phu Quoc</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, officiis autem? Doloribus voluptates ducimus molestiae architecto, doloremque omnis ut? Deleniti nisi iure similique minus totam! Eveniet alias aliquam voluptatem nisi.</p>
           </div>
         </div>
       </div>
@@ -247,7 +329,7 @@
   </div>
 
     <!-- footer -->
-    <footer class="content-footer container-fluid">
+    <footer data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" class="content-footer container-fluid">
         <!--  container  -->
         <div class="footer_container ">
             <div class="row footer_container_row">
@@ -326,6 +408,10 @@
         crossorigin="anonymous"></script>
       <!----owl carousel-->
       <script src="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
       <script src="JS/anime.js"></script>
       <script src="JS/custom.js"></script>
       

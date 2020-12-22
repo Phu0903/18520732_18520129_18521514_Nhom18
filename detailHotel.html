@@ -13,6 +13,7 @@
   <!--owl carousel -->
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--Main Css-->
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/detailHotel.css">
@@ -146,10 +147,10 @@
               <p>$299<span>/ day</span></p>
             </div>
             <div class="book-form">
-              <div class="col-md-12"><b>Arrive</b>
+              <div class="col-md-12"><b>Arrive Date</b>
                 <input placeholder="Arival Date" type="text" class="form-control datepicker-example8">
               </div>
-              <div class="col-md-12"><b>Departure</b>
+              <div class="col-md-12"><b>Departure Date</b>
                 <input type="text" placeholder="Departure Date" class="form-control datepicker-example8">
               </div>
               <div class="col-md-12"><b>Adults</b>
@@ -176,7 +177,7 @@
               </div>
               <div class="col-md-12">
                 <div class="chk-button">
-                  <button type="submit" class="res-btn">Check Availability</button>
+                  <button type="submit" class="res-btn">Find Hotels</button>
                 </div>
               </div>
             </div>
@@ -231,7 +232,10 @@
               <div class="single-sl-room">
                 <div data-hash="zero" class="owl-itemm"><img src="img/detail/gallery/1.jpg" alt=""></div>
                 <!-- <div data-hash="one" class="owl-itemm"><img src="img/detail/gallery/1.jpg" alt=""></div> -->
-              </div><a href="#zero" class="button secondary url"><img src="img/detail/gallery/3.jpg" alt=""></a><a href="#one" class="button secondary url"><img src="img/detail/gallery/2.jpg" alt=""></a><a href="#two" class="button secondary url"><img src="img/detail/gallery/4.jpg" alt=""></a><a href="#three" class="button secondary url"><img src="img/detail/gallery/5.jpg" alt=""></a><a href="#four" class="button secondary url"><img src="img/detail/gallery/6.jpg" alt=""></a>
+              </div>
+              <div class="small-img">
+                <a href="#zero" class="button secondary url"><img src="img/detail/gallery/3.jpg" alt="" style="margin-right: 2.5px;"></a><a href="#one" class="button secondary url"><img src="img/detail/gallery/2.jpg" alt="" style="margin-right: 2px;"></a><a href="#two" class="button secondary url"><img src="img/detail/gallery/4.jpeg" alt="" style="margin-right: 2px;"></a><a href="#three" class="button secondary url"><img src="img/detail/gallery/5.jpeg" alt="" style="margin-right: 2px;"></a><a href="#four" class="button secondary url"><img src="img/detail/gallery/6.jpg" alt=""></a>
+              </div>
             </div>
           </div>
           <!-- Rooms Slider style-->
@@ -256,7 +260,7 @@
   
   
   <!-- footer -->
-  <footer class="content-footer container-fluid">
+  <footer data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" class="content-footer container-fluid">
     <!--  container  -->
     <div class="footer_container ">
       <div class="row footer_container_row">
@@ -335,6 +339,10 @@
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!----owl carousel-->
 <script src="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="JS/anime.js"></script>
 <script src="JS/custom.js"></script>
 

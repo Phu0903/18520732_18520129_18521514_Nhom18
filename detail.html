@@ -13,6 +13,7 @@
   <!--owl carousel -->
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--Main Css-->
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/detail.css">
@@ -94,11 +95,11 @@
               <p>$299<span>/ person</span></p>
             </div>
             <div class="book-form">
-              <div class="col-md-12"><b>Arrive</b>
-                <input placeholder="Arival Date" type="text" class="form-control datepicker-example8">
+              <div class="col-md-12"><b>Arrive </b>
+                <input placeholder="Arival To" type="text" class="form-control datepicker-example8">
               </div>
-              <div class="col-md-12"><b>Departure</b>
-                <input type="text" placeholder="Departure Date" class="form-control datepicker-example8">
+              <div class="col-md-12"><b>Departure </b>
+                <input type="text" placeholder="Departure From" class="form-control datepicker-example8">
               </div>
               <div class="col-md-12"><b>Adults</b>
                 <div class="select-option">
@@ -124,7 +125,7 @@
               </div>
               <div class="col-md-12">
                 <div class="chk-button">
-                  <button type="submit" class="res-btn">Check Availability</button>
+                  <button type="submit" class="res-btn">Find Tours</button>
                 </div>
               </div>
             </div>
@@ -172,7 +173,7 @@
         </div>
       </div>
       <div class="col-md-8 col-md-pull-4">
-        <div class="single-room-wrapper">
+        <div class="single-room-wrapper"> 
           <!-- Rooms Slider style-->
           <div class="room-slider-wrapper">
             <div class="single-r-wrapper">
@@ -198,7 +199,7 @@
     </div>
   </div>
   <!-- footer -->
-  <footer class="content-footer container-fluid">
+  <footer data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" class="content-footer container-fluid">
     <!--  container  -->
     <div class="container">
       <div class="footer_container ">
@@ -276,6 +277,10 @@
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!----owl carousel-->
 <script src="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="JS/anime.js"></script>
 <script src="JS/custom.js"></script>
 
