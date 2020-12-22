@@ -1,6 +1,5 @@
  section {
-<<<<<<< HEAD
-     display: block;
+     <<<<<<< HEAD display: block;
  }
  
  .container {
@@ -55,7 +54,7 @@
      padding: 0;
  }
  
- .sec-header4 h2:after {
+ .sec-header4 h3:after {
      content: '';
      position: absolute;
      bottom: 7px;
