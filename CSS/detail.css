@@ -371,3 +371,13 @@ h4{
     font: 600 1.3em/1.5em "Open Sans", sans-serif;
     padding: 0.8em 2em;
   }
+
+  .menu-select{
+    width: 307px;
+    height: 39px;
+    padding-left: 10px;
+    color: #959595;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

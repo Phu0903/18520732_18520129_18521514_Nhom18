@@ -137,6 +137,16 @@ h4{
       margin-bottom: 10px;
   }
 
+  .menu-select{
+    width: 307px;
+    height: 39px;
+    padding-left: 10px;
+    color: #959595;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
   .res-btn{
       border: none;
       outline: none;
