@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
+  
   list-style: none;
 }
+
 
 .container {
   vertical-align: center;
@@ -377,3 +377,7 @@ h4{
     font: 600 1.3em/1.5em "Open Sans", sans-serif;
     padding: 0.8em 2em;
   }
+  .popular-post ul
+{
+  padding: 0px;
+}

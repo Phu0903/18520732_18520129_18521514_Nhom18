@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  
+  
   list-style: none;
 }
 
@@ -380,4 +380,8 @@ h4{
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.popular-post ul
+{
+  padding: 0px;
 }
