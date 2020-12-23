@@ -1,3 +1,10 @@
+:root {
+  --color_1: #8333e9;
+  --color_2: #000000;
+  --color_3: #f9f7f1;
+  --color_4: rgba(49, 18, 75, 0.8);
+  --color-5: #fa9e1b;
+}
 * {
   
   
@@ -134,7 +141,7 @@ h4{
   
   .book-r-form .book-form .res-btn {
     width: 100%;
-    background: #85ab00;
+    background: var(--color-5) ;
   }
 
   .form-control{
@@ -155,9 +162,9 @@ h4{
       transition: all 0.25s ease;
   }
   
-  .book-r-form .book-form .res-btn:hover {
-    background: #1a1a1c;
-  }
+  /* .book-r-form .book-form .res-btn:hover {
+    background: var(--color_1);
+  } */
 
   .img-cap-effect .img-box {
     position: relative;
@@ -206,7 +213,8 @@ h4{
     margin-top: 23px;
   }
   
-  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .button.secondary img:hover, .single-room-wrapper .room-slider-wrapper .single-r-wrapper .button.secondary img:focus {
+  .single-room-wrapper .room-slider-wrapper .single-r-wrapper .button.secondary img:hover,
+   .single-room-wrapper .room-slider-wrapper .single-r-wrapper .button.secondary img:focus {
     opacity: 0.2;
   }
   
@@ -240,7 +248,7 @@ h4{
     width: 60px;
     height: 2px;
     display: inline-block;
-    background: #a7cc38;
+    background: var(--color-5);
     margin: 0 0 0 12px;
   }
   
