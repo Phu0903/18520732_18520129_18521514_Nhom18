@@ -82,3 +82,36 @@
 .sroom-sidebar{
     margin-right: 50px;
 }
+
+.block-27 ul {
+    padding: 0;
+    margin: 0; }
+    .block-27 ul li {
+      display: inline-block;
+      margin-bottom: 4px; }
+      .block-27 ul li a, .block-27 ul li span {
+        text-align: center;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        border: 1px solid #ccc; 
+        cursor: pointer;
+    }
+      .block-27 ul li.active a, .block-27 ul li.active span {
+        background: #ff5f5f;
+        color: #fff;
+        border: 1px solid transparent; }
+  
+  .block-7 {
+    margin-bottom: 30px;
+    padding: 30px;
+    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.11);
+    background: #fff; }
+
+.slide-pages{
+    text-align: center;
+    margin-top: 35px;
+}
