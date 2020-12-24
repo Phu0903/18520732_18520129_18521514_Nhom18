@@ -1,4 +1,10 @@
-
+:root {
+    --color_1: #8333e9;
+    --color_2: #000000;
+    --color_3: #f9f7f1;
+    --color_4: rgba(49, 18, 75, 0.8);
+    --color-5: #fa9e1b;
+  }
 .sec-header3 h2 {
     color: #0e1322;
     font: 2.43em/1em "Playball", sans-serif;
@@ -84,7 +90,7 @@
 
 .post-category {
     margin-bottom: 0;
-    color: #1ba0e2;
+    color: var(--color-5);
     font-weight: bold;
 }
 

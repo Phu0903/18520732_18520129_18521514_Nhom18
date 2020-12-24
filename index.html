@@ -7,12 +7,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--owl carousel -->
   <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
-  <link rel="stylesheet" href="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css">
   <!--Main Css-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="CSS/style.css">
@@ -21,7 +18,12 @@
 </head>
 
 <body scroll="no">
-
+  <div class="loader">
+    <div class="loader-round"></div>
+    <div class="loader-round"></div>
+    <div class="loader-round"></div>
+    <div class="loader-round"></div>
+ </div>
   <!--------Login------->
   <div class="dangnhap" id="dangnhap">
     <div class="login-box">
@@ -71,7 +73,6 @@
   </div>
   <div class="lot"></div>
   <!--slide nav-->
-
   <div id="super_container" class="super_container">
     <header class="header">
       <div id="top-bar" class="top-bar">
@@ -119,11 +120,11 @@
     </header>
   </div>
   <!--content-->
-  <div class="home_index">
-    <div class="home_slider_owl">
-      <div id="owl-carousel-bg" class="owl-carousel owl-theme">
-        <div class="item home_slider_item">
-          <div class="home_slider_background" style="background-image: url(img/slider/bg_4.jpg);">
+  <div class="home_slider_owl">
+    <div id="owl-carousel-bg" class="owl-theme">
+      <div id="slide-window">
+        <div id="slides" start="1">
+          <li class="slide alive" style="background-image: url(img/slider/bg_4.jpg);">
             <div class="over_lay"></div>
             <div class="home_slider_content text-center">
               <div class="text_svg">
@@ -186,29 +187,36 @@
                 </svg>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="item home_slider_item">
-          <div class="home_slider_background" style="background-image: url(img/slider/bg_1.jpg);">
+          </li>
+          <li class="slide " style="background-image: url(img/slider/10.jpg);">
             <div class="over_lay"></div>
             <div class="home_slider_content text-center">
               <div class="text_slider">
                 <h1 class="text_1">Experience the best trip ever</h1>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="item home_slider_item">
-          <div class="home_slider_background" style="background-image: url(img/slider/10.jpg);">
+          </li>
+          <li class="slide " style="background-image: url(img/slider/bg_1.jpg);">
             <div class="over_lay"></div>
             <div class="home_slider_content text-center">
               <div class="text_slider">
                 <h1 class="text_1">Travel Operator Just For You</h1>
               </div>
             </div>
-          </div>
+          </li>
         </div>
+        <button class="nav" id="left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+          </svg>
+        </button>
+        <button class="nav" id="right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
@@ -291,7 +299,7 @@
   <div class="counter-item">
     <div class="container contry-wrapp">
       <div class="row contry-wrapp-row">
-        <div data-aos="fade-up" data-aos-duration="500" class="col-md-3 contry-wrapp-col-3">
+        <div data-aos="fade-in" data-aos-duration="500" class="col-md-3 contry-wrapp-col-3">
           <div class="second-title ">
             <h4 class="title_contry_1 ">our tours</h4>
             <h2 class="title_contry_2">tours to any place in the world</h2>
@@ -299,37 +307,37 @@
         </div>
         <div class="col-md-9 contry-col-9">
           <div class="row">
-            <div data-aos="fade-up" data-aos-duration="600" class="col-2">
+            <div data-aos="fade-up" data-aos-duration="500" class="col-md-2">
               <a href="" class="contry-item">
                 <img class="contry-img" src="img/Counter/country_1.png">
                 <h5>EUROPE</h5>
               </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="800" class="col-2">
+            <div data-aos="fade-up" data-aos-duration="800" class="col-md-2">
               <a href="" class="contry-item">
                 <img class="contry-img" src="img/Counter/country_2.png">
                 <h5>ASIA</h5>
               </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" class="col-2">
+            <div data-aos="fade-up" data-aos-duration="1000" class="col-md-2">
               <a href="" class="contry-item">
                 <img class="contry-img" src="img/Counter/country_3.png">
                 <h5>AFRICA</h5>
               </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1200" class="col-2">
+            <div data-aos="fade-up" data-aos-duration="1200" class="col-md-2">
               <a href="" class="contry-item">
                 <img class="contry-img" src="img/Counter/country_4.png">
                 <h5>NORTH AMERICA</h5>
               </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1400" class="col-2">
+            <div data-aos="fade-up" data-aos-duration="1400" class="col-md-2">
               <a href="" class="contry-item">
                 <img class="contry-img" src="img/Counter/country_5.png">
                 <h5>SOUTH AMERICA</h5>
               </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1600" class="col-2">
+            <div data-aos="fade-up" data-aos-duration="1600" class="col-md-2">
               <a href="" class="contry-item">
                 <img class="contry-img" src="img/Counter/country_6.png">
                 <h5>AUSTRALIA</h5>
@@ -351,31 +359,33 @@
           </div>
         </div>
         <div class="row no-gutters des-gallery justify-content-center">
-          <div data-aos="fade-right" data-aos-delay="50" class="col-md-6 col-lg-3 col-des-gallery">
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
+            class="col-md-6 col-lg-3 col-des-gallery">
             <a href="#" class="block-5">
-              <div class="card__background" style="background-image: url('img/booking/tour-1.jpg')">
+              <div class="card__background" style="background-image: url('img/tours/Hagiang.jpeg">
                 <div class="Des_text">
-                  <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
+                  <span class="price">$200</span>
+                  <h3 class="heading">Ha Noi - Ha Giang</h3>
                   <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                    <span>6 DAYS / 7 NIGHTS</span>
                   </div>
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                       class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
-                    <span>500 reviews</span>
+                    <span>100 reviews</span>
                   </p>
                 </div>
               </div>
             </a>
           </div>
-          <div data-aos="fade-right" class="col-md-6 col-lg-3 col-des-gallery">
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
+            class="col-md-6 col-lg-3 col-des-gallery">
             <a href="#" class="block-5">
               <div class="card__background" style="background-image: url('img/booking/tour-2.jpg')">
                 <div class="Des_text">
-                  <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
+                  <span class="price">$199</span>
+                  <h3 class="heading">Ha Noi - Ninh Binh</h3>
                   <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                    <span>2 DAYS / 3 NIGHTS</span>
                   </div>
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                       class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
@@ -385,31 +395,33 @@
               </div>
             </a>
           </div>
-          <div data-aos="fade-left" data-aos-delay="50" class="col-md-6 col-lg-3 col-des-gallery">
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
+            class="col-md-6 col-lg-3 col-des-gallery">
             <a href="#" class="block-5">
               <div class="card__background" style="background-image: url('img/booking/tour-3.jpg')">
                 <div class="Des_text">
-                  <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
+                  <span class="price">$1399</span>
+                  <h3 class="heading">Paris - Hawaii</h3>
                   <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                    <span>7 DAYS / 7 NIGHTS</span>
                   </div>
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
-                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
-                    <span>500 reviews</span>
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+                    <span>100 reviews</span>
                   </p>
                 </div>
               </div>
             </a>
           </div>
-          <div data-aos="fade-left" class="col-md-6 col-lg-3 col-des-gallery">
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
+            class="col-md-6 col-lg-3 col-des-gallery">
             <a href="#" class="block-5">
               <div class="card__background" style="background-image: url('img/booking/tour-4.jpg')">
                 <div class="Des_text">
-                  <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
+                  <span class="price">$1299</span>
+                  <h3 class="heading">Ha Noi - Tokyo</h3>
                   <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                    <span>7 DAYS / 7 NIGHTS</span>
                   </div>
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                       class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
@@ -419,15 +431,33 @@
               </div>
             </a>
           </div>
-          <div data-aos="fade-right" data-aos="fade-right" data-aos-delay="50"
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
             class="col-md-6 col-lg-3 col-des-gallery">
             <a href="#" class="block-5">
               <div class="card__background" style="background-image: url('img/booking/tour-5.jpg')">
                 <div class="Des_text">
-                  <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
+                  <span class="price">$3399</span>
+                  <h3 class="heading">Paris - Ha Noi</h3>
                   <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                    <span>10 DAYS / 9 NIGHTS</span>
+                  </div>
+                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                    <span>690 reviews</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
+            class="col-md-6 col-lg-3 col-des-gallery">
+            <a href="#" class="block-5">
+              <div class="card__background" style="background-image: url('img/tours/QuangNinh.jpeg')">
+                <div class="Des_text">
+                  <span class="price">$399</span>
+                  <h3 class="heading">Vung Tau - Quang Ninh</h3>
+                  <div class="post-meta">
+                    <span>3 DAYS / 2 NIGHTS</span>
                   </div>
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                       class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
@@ -437,52 +467,37 @@
               </div>
             </a>
           </div>
-          <div data-aos="fade-right" class="col-md-6 col-lg-3 col-des-gallery">
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
+            class="col-md-6 col-lg-3 col-des-gallery">
             <a href="#" class="block-5">
-              <div class="card__background" style="background-image: url('img/booking/tour-6.jpg')">
+              <div class="card__background" style="background-image: url('img/tours/hcm.jpeg')">
                 <div class="Des_text">
                   <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
+                  <h3 class="heading">Phu Quoc</h3>
                   <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                    <span>3 DAYS</span>
                   </div>
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                       class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
-                    <span>500 reviews</span>
+                    <span>529 reviews</span>
                   </p>
                 </div>
               </div>
             </a>
           </div>
-          <div data-aos="fade-left" data-aos-delay="50" class="col-md-6 col-lg-3 col-des-gallery">
+          <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000"
+            class="col-md-6 col-lg-3 col-des-gallery">
             <a href="#" class="block-5">
-              <div class="card__background" style="background-image: url('img/booking/tour-7.jpg')">
+              <div class="card__background" style="background-image: url('img/tours/Dalat2.jpg')">
                 <div class="Des_text">
                   <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
+                  <h3 class="heading">Da Lat</h3>
                   <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                    <span>3 DAYS / 2 NIGHTS</span>
                   </div>
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                       class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
-                    <span>500 reviews</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div data-aos="fade-left" class="col-md-6 col-lg-3 col-des-gallery">
-            <a href="#" class="block-5">
-              <div class="card__background" style="background-image: url('img/booking/tour-8.jpg')">
-                <div class="Des_text">
-                  <span class="price">$399</span>
-                  <h3 class="heading">Group Tour in Maldives</h3>
-                  <div class="post-meta">
-                    <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                  </div>
-                  <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
-                      class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
-                    <span>500 reviews</span>
+                    <span>230 reviews</span>
                   </p>
                 </div>
               </div>
@@ -499,7 +514,7 @@
       <div class="counter-container">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="col-lg-3 col-md-3 ">
               <div class="counter">
                 <div class="counter-count" data-target="10000">0</div>
                 <p class="counter-p">Destination</p>
@@ -546,10 +561,10 @@
                 <a href="#" class="block-6">
                   <div class="card__background" style="background-image: url('img/hotel/hotel-1.jpg')">
                     <div class="Des_text">
-                      <span class="price">$399</span>
-                      <h3 class="heading">Group Tour in Maldives</h3>
+                      <span class="price">$79 Per Nights</span>
+                      <h3 class="heading">Vinpearl Phu Quoc & Spa</h3>
                       <div class="post-meta">
-                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                        <span>Adorned with genuine Asian architecture </span>
                       </div>
                       <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                           class="icon-star"></span><span class="icon-star"></span><span
@@ -564,15 +579,15 @@
                 <a href="#" class="block-6">
                   <div class="card__background" style="background-image: url('img/hotel/hotel-2.jpg')">
                     <div class="Des_text">
-                      <span class="price">$399</span>
-                      <h3 class="heading">Group Tour in Maldives</h3>
+                      <span class="price">$100 Per Night</span>
+                      <h3 class="heading">Hotel Da Lat</h3>
                       <div class="post-meta">
-                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                        <span>Adorned with genuine Asian architecture</span>
                       </div>
                       <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                           class="icon-star"></span><span class="icon-star"></span><span
-                          class="icon-star-half-full"></span>
-                        <span>500 reviews</span>
+                          class="icon-star"></span>
+                        <span>510 reviews</span>
                       </p>
                     </div>
                   </div>
@@ -582,10 +597,10 @@
                 <a href="#" class="block-6">
                   <div class="card__background" style="background-image: url('img/hotel/hotel-3.jpg')">
                     <div class="Des_text">
-                      <span class="price">$399</span>
-                      <h3 class="heading">Group Tour in Maldives</h3>
+                      <span class="price">$99 Per Night</span>
+                      <h3 class="heading">Vinpearl Da Nang</h3>
                       <div class="post-meta">
-                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                        <span>Number One of  Vinpearl Viet Nam</span>
                       </div>
                       <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                           class="icon-star"></span><span class="icon-star"></span><span
@@ -597,17 +612,17 @@
                 </a>
               </div>
               <div data-aos="zoom-in" data-aos-duration="800" class="item"> <a href="#" class="block-6">
-                  <div class="card__background" style="background-image: url('img/hotel/hotel-4.jpg')">
+                  <div class="card__background" style="background-image: url('img/hotel/hotel_7.jpg')">
                     <div class="Des_text">
-                      <span class="price">$399</span>
-                      <h3 class="heading">Group Tour in Maldives</h3>
+                      <span class="price">$39 Per Night</span>
+                      <h3 class="heading">Vinpearl Ha Noi</h3>
                       <div class="post-meta">
-                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
+                        <span>Adorned with genuine Asian architecture</span>
                       </div>
                       <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                           class="icon-star"></span><span class="icon-star"></span><span
                           class="icon-star-half-full"></span>
-                        <span>500 reviews</span>
+                        <span>200 reviews</span>
                       </p>
                     </div>
                   </div>
@@ -615,24 +630,8 @@
               <div data-aos="zoom-in" data-aos-duration="800" class="item"> <a href="#" class="block-6">
                   <div class="card__background" style="background-image: url('img/hotel/hotel-5.jpg')">
                     <div class="Des_text">
-                      <span class="price">$399</span>
-                      <h3 class="heading">Group Tour in Maldives</h3>
-                      <div class="post-meta">
-                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                      </div>
-                      <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
-                          class="icon-star"></span><span class="icon-star"></span><span
-                          class="icon-star-half-full"></span>
-                        <span>500 reviews</span>
-                      </p>
-                    </div>
-                  </div>
-                </a></div>
-              <div data-aos="zoom-in" data-aos-duration="800" class="item"> <a href="#" class="block-6">
-                  <div class="card__background" style="background-image: url('img/hotel/hotel-9.jpg')">
-                    <div class="Des_text">
-                      <span class="price">$399</span>
-                      <h3 class="heading">Group Tour in Maldives</h3>
+                      <span class="price">$39 Per Night</span>
+                      <h3 class="heading">Hotel Vung Tau</h3>
                       <div class="post-meta">
                         <span>Ameeru Ahmed Magu Male’, Maldives</span>
                       </div>
@@ -654,163 +653,164 @@
   <!---->
   <!-- -Testimonials-->
   <div class="sm">
-    <div class="testimonials " style="background: #f9f9f9;">
-      <div class="contanier">
-        <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
-          class="heading-section heading-section-text ">What Our Client Say About Us</h2>
-        <div id="owl_tesimonials" class="owl-carousel  owl-loaded owl-drag">
-          <div data-aos="zoom-in" data-aos-duration="800" class="item">
-            <div href="#" class="block-6">
-              <div class="card__background" style="background-image: url(img/testimonials/test_1.jpg)">
-                <div class="tes_content">
-                  <div class="tes-top">
-                    <h2 class="tes-top-h2">SEA TOUR</h2>
-                  </div>
-                  <div class="tes_bottom">
-                    <div class="calendar">
-                      <span class="cal_text">03/07/2000</span>
+    <div class="testimonials ">
+        <div class="contanier">
+            <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" class="heading-section heading-section-text ">What Our Client Say About Us</h2>
+            <div id="owl_tesimonials" class="owl-carousel  owl-loaded owl-drag">
+                <div data-aos="zoom-in" data-aos-duration="800" class="item">
+                    <div href="#" class="block-6">
+                        <div class="card__background" style="background-image: url('img/about/7.jpg')">
+                            <div class="tes_content">
+                                <div class="tes-top">
+                                    <h2 class="tes-top-h2">SEA TOUR</h2>
+                                </div>
+                                <div class="tes_bottom">
+                                    <div class="calendar">
+                                        <span class="cal_text">12/07/2020</span>
+                                    </div>
+                                    <h3 class="tes_name underline">Nguyen Phu</h3>
+                                    <div class="tes_cmt">
+                                        <span class="tes_cmt">"Travelix brings us a feeling of great travel
+                                            experience."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="tes_name underline">Nguyễn Phú</h3>
-                    <div class="tes_cmt">
-                      <span class="tes_cmt">"Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa
-                        idporta nequetiam."</span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="800" class="item">
-            <div href="#" class="block-6">
-              <div class="card__background" style="background-image: url(img/testimonials/test_1.jpg)">
-                <div class="tes_content">
-                  <div class="tes-top">
-                    <h2 class="tes-top-h2">SEA TOUR</h2>
-                  </div>
-                  <div class="tes_bottom">
-                    <div class="calendar">
-                      <span class="cal_text">03/07/2000</span>
+                <div data-aos="zoom-in" data-aos-duration="800" class="item">
+                    <div href="#" class="block-6">
+                        <div class="card__background" style="background-image: url('img/about/8.jpg')">
+                            <div class="tes_content">
+                                <div class="tes-top">
+                                    <h2 class="tes-top-h2">GROUP TOUR</h2>
+                                </div>
+                                <div class="tes_bottom">
+                                    <div class="calendar">
+                                        <span class="cal_text">03/07/2020</span>
+                                    </div>
+                                    <h3 class="tes_name underline">Vu Toi</h3>
+                                    <div class="tes_cmt">
+                                        <span class="tes_cmt">"Travelix brings us a feeling of great travel
+                                            experience."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="tes_name underline">Nguyễn Phú</h3>
-                    <div class="tes_cmt">
-                      <span class="tes_cmt">"Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa
-                        idporta nequetiam."</span>
-                    </div>
-                  </div>
                 </div>
+                <div data-aos="zoom-in" data-aos-duration="800" class="item">
+                  <div href="#" class="block-6">
+                      <div class="card__background" style="background-image: url('img/testimonials/test_3.jpg')">
+                          <div class="tes_content">
+                              <div class="tes-top">
+                                  <h2 class="tes-top-h2">SEA TOUR</h2>
+                              </div>
+                              <div class="tes_bottom">
+                                  <div class="calendar">
+                                      <span class="cal_text">12/07/2020</span>
+                                  </div>
+                                  <h3 class="tes_name underline">My Linh</h3>
+                                  <div class="tes_cmt">
+                                      <span class="tes_cmt">"Travelix brings us a feeling of great travel
+                                          experience."</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="800" class="item">
-            <div href="#" class="block-6">
-              <div class="card__background" style="background-image: url(img/testimonials/test_1.jpg)">
-                <div class="tes_content">
-                  <div class="tes-top">
-                    <h2 class="tes-top-h2">SEA TOUR</h2>
-                  </div>
-                  <div class="tes_bottom">
-                    <div class="calendar">
-                      <span class="cal_text">03/07/2000</span>
+                <div data-aos="zoom-in" data-aos-duration="800" class="item">
+                    <div href="#" class="block-6">
+                        <div class="card__background" style="background-image: url('img/about/9.jpg')">
+                            <div class="tes_content">
+                                <div class="tes-top">
+                                    <h2 class="tes-top-h2">Mountian Tours
+                                    </h2>
+                                </div>
+                                <div class="tes_bottom">
+                                    <div class="calendar">
+                                        <span class="cal_text">03/07/2020</span>
+                                    </div>
+                                    <h3 class="tes_name underline">Minh Hieu</h3>
+                                    <div class="tes_cmt">
+                                        <span class="tes_cmt">"Travelix brings us a feeling of great travel
+                                            experience."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="tes_name underline">Nguyễn Phú</h3>
-                    <div class="tes_cmt">
-                      <span class="tes_cmt">"Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa
-                        idporta nequetiam."</span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="800" class="item">
-            <div href="#" class="block-6">
-              <div class="card__background" style="background-image: url(img/testimonials/test_1.jpg)">
-                <div class="tes_content">
-                  <div class="tes-top">
-                    <h2 class="tes-top-h2">SEA TOUR</h2>
-                  </div>
-                  <div class="tes_bottom">
-                    <div class="calendar">
-                      <span class="cal_text">03/07/2000</span>
+                <div data-aos="zoom-in" data-aos-duration="800" class="item">
+                    <div href="#" class="block-6">
+                        <div class="card__background" style="background-image: url('img/testimonials/testimonal_2.jpg')">
+                            <div class="tes_content">
+                                <div class="tes-top">
+                                    <h2 class="tes-top-h2">SEA TOUR</h2>
+                                </div>
+                                <div class="tes_bottom">
+                                    <div class="calendar">
+                                        <span class="cal_text">03/07/2020</span>
+                                    </div>
+                                    <h3 class="tes_name underline">Nguyen Phu</h3>
+                                    <div class="tes_cmt">
+                                        <span class="tes_cmt">"Travelix brings us a feeling of great travel
+                                            experience."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="tes_name underline">Nguyễn Phú</h3>
-                    <div class="tes_cmt">
-                      <span class="tes_cmt">"Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa
-                        idporta nequetiam."</span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="800" class="item">
-            <div href="#" class="block-6">
-              <div class="card__background" style="background-image: url(img/testimonials/test_1.jpg)">
-                <div class="tes_content">
-                  <div class="tes-top">
-                    <h2 class="tes-top-h2">SEA TOUR</h2>
-                  </div>
-                  <div class="tes_bottom">
-                    <div class="calendar">
-                      <span class="cal_text">03/07/2000</span>
+                <div data-aos="zoom-in" data-aos-duration="800" class="item">
+                    <div href="#" class="block-6">
+                        <div class="card__background" style="background-image: url('img/testimonials/test_1.jpg')">
+                            <div class="tes_content">
+                                <div class="tes-top">
+                                    <h2 class="tes-top-h2">Family Tours</h2>
+                                </div>
+                                <div class="tes_bottom">
+                                    <div class="calendar">
+                                        <span class="cal_text">23/07/2000</span>
+                                    </div>
+                                    <h3 class="tes_name underline">Vu Toi</h3>
+                                    <div class="tes_cmt">
+                                        <span class="tes_cmt">"Travelix brings us a feeling of great travel
+                                            experience."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="tes_name underline">Nguyễn Phú</h3>
-                    <div class="tes_cmt">
-                      <span class="tes_cmt">"Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa
-                        idporta nequetiam."</span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="800" class="item">
-            <div href="#" class="block-6">
-              <div class="card__background" style="background-image: url(img/testimonials/test_1.jpg)">
-                <div class="tes_content">
-                  <div class="tes-top">
-                    <h2 class="tes-top-h2">SEA TOUR</h2>
-                  </div>
-                  <div class="tes_bottom">
-                    <div class="calendar">
-                      <span class="cal_text">03/07/2000</span>
+                <div data-aos="zoom-in" data-aos-duration="800" class="item">
+                    <div href="#" class="block-6">
+                        <div class="card__background" style="background-image: url('img/testimonials/test_2.jpg')">
+                            <div class="tes_content">
+                                <div class="tes-top">
+                                    <h2 class="tes-top-h2">SEA TOUR</h2>
+                                </div>
+                                <div class="tes_bottom">
+                                    <div class="calendar">
+                                        <span class="cal_text">03/10/2020</span>
+                                    </div>
+                                    <h3 class="tes_name underline">Minh Hieu</h3>
+                                    <div class="tes_cmt">
+                                        <span class="tes_cmt">"Travelix brings us a feeling of great travel
+                                            experience."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="tes_name underline">Nguyễn Phú</h3>
-                    <div class="tes_cmt">
-                      <span class="tes_cmt">"Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa
-                        idporta nequetiam."</span>
-                    </div>
-                  </div>
                 </div>
-              </div>
+               
             </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="800" class="item">
-            <div href="#" class="block-6">
-              <div class="card__background" style="background-image: url(img/testimonials/test_1.jpg)">
-                <div class="tes_content">
-                  <div class="tes-top">
-                    <h2 class="tes-top-h2">SEA TOUR</h2>
-                  </div>
-                  <div class="tes_bottom">
-                    <div class="calendar">
-                      <span class="cal_text">03/07/2000</span>
-                    </div>
-                    <h3 class="tes_name underline">Nguyễn Phú</h3>
-                    <div class="tes_cmt">
-                      <span class="tes_cmt">"Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa
-                        idporta nequetiam."</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
+        </div>
+    </div>
+</div>
   <!--video-->
   <div class="sm">
     <div class="video_area overlay" style="background-image: url(img/bg/video.png);">
@@ -857,7 +857,7 @@
                   <span class="blog_img" style="background-image: url(img/blog/blog-1.jpg);"></span>
                   <div class="desc">
                     <span class="date">Oct 22, 2020</span>
-                    <h3>A Definitive Guide to the Best Dining</h3>
+                    <h3>5 brand new Vung Tau check-in </h3>
                     <span class="cat">Activities</span>
                   </div>
                 </a>
@@ -866,8 +866,8 @@
                 <a href="#" class="blog-post">
                   <span class="blog_img" style="background-image: url(img/blog/blog-4.jpg);"></span>
                   <div class="desc">
-                    <span class="date">Oct 22, 2020</span>
-                    <h3>A Definitive Guide to the Best Dining</h3>
+                    <span class="date">Dec 12, 2020</span>
+                    <h3>5 brand new Phu Quoc check-in </h3>
                     <span class="cat">Activities</span>
                   </div>
                 </a>
@@ -876,8 +876,8 @@
                 <a href="#" class="blog-post">
                   <span class="blog_img" style="background-image: url(img/blog/blog-2.jpg);"></span>
                   <div class="desc">
-                    <span class="date">Oct 22, 2020</span>
-                    <h3>A Definitive Guide to the Best Dining</h3>
+                    <span class="date">Oct 2, 2020</span>
+                    <h3>5 brand new Da Lat check-in </h3>
                     <span class="cat">Activities</span>
                   </div>
                 </a>
@@ -963,12 +963,8 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js\jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!----owl carousel-->
 <script src="vendors\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
