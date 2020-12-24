@@ -223,6 +223,7 @@ cdtimeline.add({
     targets:'.text_svg g path',
     strokeDashoffset:[anime.setDashoffset,0],
     duration:2000,
+    delay:1350,
     easing:'easeOutSine',
     direction:'alternate',
     loop:true
@@ -234,7 +235,7 @@ cdtimeline.add({
  $(window).on('load', function(event) {
  	$('body').removeClass('preloading');
 // 	// $('.load').delay(1000).fadeOut('fast');
- 	$('.loader').delay(1900).fadeOut('fast');
+ 	$('.loader').delay(1200).fadeOut('fast');
  });
 
 

@@ -1458,19 +1458,19 @@ Login
 }
 .loader-round:nth-child(1) {
   background-color: var(--color-5);
-  animation: move 2s infinite cubic-bezier(.2,.64,.81,.23);
+  animation: move 1.5s infinite cubic-bezier(.2,.64,.81,.23);
 }
 .loader-round:nth-child(2) {
   background-color: var(--color_1);
-  animation: move 2s 150ms infinite cubic-bezier(.2,.64,.81,.23);
+  animation: move 1.5s 150ms infinite cubic-bezier(.2,.64,.81,.23);
 }
 .loader-round:nth-child(3) {
   background-color: var(--color_3);
-  animation: move 2s 300ms infinite cubic-bezier(.2,.64,.81,.23);
+  animation: move 1.5s 300ms infinite cubic-bezier(.2,.64,.81,.23);
 }
 .loader-round:nth-child(4) {
   background-color: #75B08A;
-  animation: move 2s 450ms infinite cubic-bezier(.2,.64,.81,.23);
+  animation: move 1.5s 450ms infinite cubic-bezier(.2,.64,.81,.23);
 }
 @keyframes move {
   0% {left: 0%;}
