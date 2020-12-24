@@ -1,109 +1,118 @@
+:root {
+    --color_1: #8333e9;
+    --color_2: #000000;
+    --color_3: #f9f7f1;
+    --color_4: rgba(49, 18, 75, 0.8);
+    --color-5: #fa9e1b;
+  }
 p {
-    display: block;
-     margin-block-start: 0em;
-    margin-block-end: 0em; 
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 #hotel_list {
-    margin-top: 80px;
-    margin-bottom: 50px;
-    background-color: #f9f7f1;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  background-color: #f9f7f1;
 }
 
-
-
 #hotel_list .hotel_media {
-    margin: 12px;
+  margin: 12px;
 }
 
 #hotel_list .hotel_media img {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-radius: 24px;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85);
-    transform-origin: center;
-    transform: scale(1) translateZ(0);
-    transition: filter 200ms linear, transform 200ms linear;
-    cursor: pointer;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+  cursor: pointer;
 }
 
-#hotel_list .hotel_media:hover img{
-    transform: scale(1.05) translateZ(0);
+#hotel_list .hotel_media:hover img {
+  transform: scale(1.05) translateZ(0);
 }
 
-#hotel_list .hotel_media:hover > #hotel_list .hotel_media:not(:hover) img{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+#hotel_list .hotel_media:hover > #hotel_list .hotel_media:not(:hover) img {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 #hotel_list .hotel_desc {
-    margin: 10px 10px 20px;
+  margin: 10px 10px 20px;
 }
 
 #hotel_list .hotel_desc h3 {
-    font-weight: 700;
-    padding: 5px 0;
+  font-weight: 700;
+  padding: 5px 0;
 }
 
-.menu-select{
-    width: 286px;
-    height: 39px;
-    padding-left: 10px;
-    color: #959595;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.menu-select {
+  width: 286px;
+  height: 39px;
+  padding-left: 10px;
+  color: #959595;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.col-md-4{
-    margin-left: 0px;
-    width: 400px;
-    padding: 0px;
+.col-md-4 {
+  margin-left: 0px;
+  width: 400px;
+  padding: 0px;
 }
 
 .book-r-form .room-price p {
-    color: #141313;
-  
-    margin: 0.6em 0 0;
-    padding: 0;
+  color: #141313;
+
+  margin: 0.6em 0 0;
+  padding: 0;
 }
 
-.sroom-sidebar{
-    margin-right: 50px;
+.sroom-sidebar {
+  margin-right: 50px;
 }
-
 
 .block-27 ul {
-    padding: 0;
-    margin: 0; }
-    .block-27 ul li {
-      display: inline-block;
-      margin-bottom: 4px; }
-      .block-27 ul li a, .block-27 ul li span {
-        text-align: center;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        border-radius: 50%;
-        border: 1px solid #ccc; 
-        cursor: pointer;
-    }
-      .block-27 ul li.active a, .block-27 ul li.active span {
-        background: #ff5f5f;
-        color: #fff;
-        border: 1px solid transparent; }
-  
-  .block-7 {
-    margin-bottom: 30px;
-    padding: 30px;
-    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.11);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.11);
-    background: #fff; }
-
-.slide-pages{
-    text-align: center;
-    margin-top: 35px;
+  padding: 0;
+  margin: 0;
+}
+.block-27 ul li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.block-27 ul li a,
+.block-27 ul li span {
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.block-27 ul li.active a,
+.block-27 ul li.active span {
+  background:var(--color-5) ;
+  color: var(--color_3);
+  border: 1px solid transparent;
 }
 
+.block-7 {
+  margin-bottom: 30px;
+  padding: 30px;
+  -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.11);
+  background: var(--color_3);
+}
+
+.slide-pages {
+  text-align: center;
+  margin-top: 35px;
+}
