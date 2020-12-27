@@ -1,4 +1,29 @@
 /*JS Document */
+ /******Back to top***** */
+ $(document).ready(function(){ 
+	$(window).scroll(function(){ 
+     
+		if ($(this).scrollTop() > 500) { 
+            $('#back-to-top').fadeIn();//thực hiện lệnh điều kiện Khi lăn chuột xuống dưới 
+            $("#back-to-top").css({
+                "opacity":"1",
+                "transition": "1s",
+            })
+
+			 //Xuất hiện nút
+		} else { 
+            $("#back-to-top").css({
+                "opacity":"0",
+                "transition": "1s",
+            })
+			 //Ngược lại thì ẩn nút
+		} 
+	}); 
+	$('#back-to-top').click(function(){ 
+		$("html, body").animate({ scrollTop: 0 }, 600); //Animation giúp hoạt ảnh scroll ngược lên đầu trang sẽ mượt hơn
+		return false; 
+	}); 
+});
 //************Menu***************/
 
 $(window).scroll(function(e){
@@ -237,6 +262,8 @@ cdtimeline.add({
 // 	// $('.load').delay(1000).fadeOut('fast');
  	$('.loader').delay(1200).fadeOut('fast');
  });
+
+
 
 
 

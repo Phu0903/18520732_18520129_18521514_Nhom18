@@ -106,6 +106,7 @@ p {
     border-radius: 50%;
     border: 1px solid #ccc;
     cursor: pointer;
+    color: var(--color_2);
   }
   .block-27 ul li.active a,
   .block-27 ul li.active span {

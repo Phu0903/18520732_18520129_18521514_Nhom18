@@ -1,10 +1,10 @@
 :root {
-    --color_1: #8333e9;
-    --color_2: #000000;
-    --color_3: #f9f7f1;
-    --color_4: rgba(49, 18, 75, 0.8);
-    --color-5: #fa9e1b;
-  }
+  --color_1: #8333e9;
+  --color_2: #000000;
+  --color_3: #f9f7f1;
+  --color_4: rgba(49, 18, 75, 0.8);
+  --color-5: #fa9e1b;
+}
 p {
   display: block;
   margin-block-start: 0em;
@@ -79,32 +79,31 @@ p {
 }
 
 .block-27 ul {
-
-    padding: 0;
-    margin: 0; }
-    .block-27 ul li {
-      display: inline-block;
-      margin-bottom: 4px; }
-      .block-27 ul li a, .block-27 ul li span {
-        text-align: center;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        border-radius: 50%;
-        border: 1px solid #ccc; 
-        cursor: pointer;
-    }
-      .block-27 ul li.active a, .block-27 ul li.active span {
-        background: #ff5f5f;
-        color: #fff;
-        border: 1px solid transparent; }
-  
-.slide-pages{
-    text-align: center;
-    margin-top: 35px;
-
-
+  padding: 0;
+  margin: 0;
+}
+.block-27 ul li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.block-27 ul li a,
+.block-27 ul li span {
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: var(--color_2);
+}
+.block-27 ul li.active a,
+.block-27 ul li.active span {
+  background: var(--color-5);
+  color: #fff;
+  border: 1px solid transparent;
+}
 
 .slide-pages {
   text-align: center;
