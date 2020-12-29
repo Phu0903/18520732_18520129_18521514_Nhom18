@@ -8,6 +8,14 @@
   src: url("../fonts/beyond_the_mountains.otf") format("truetype"),
     url("../fonts/beyond_the_mountains.ttf") format("opentype");
 }
+:root {
+  --color_1: #8333e9;
+  --color_2: #000000;
+  --color_3: #f9f7f1;
+  --color_4: rgba(49, 18, 75, 0.8);
+  --color-5: #fa9e1b;
+}
+
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/Font\ Awesome\ 5\ Brands-Regular-400.otf");
@@ -106,13 +114,6 @@ textarea {
 2. Body 
 *********************************/
 
-:root {
-  --color_1: #8333e9;
-  --color_2: #000000;
-  --color_3: #f9f7f1;
-  --color_4: rgba(49, 18, 75, 0.8);
-  --color-5: #fa9e1b;
-}
 
 a,
 a:link,
@@ -327,6 +328,7 @@ textarea.form-control {
   border: 1px solid white;
   z-index: 100;
   opacity: 0;
+  visibility: hidden;
 }
 #back-to-top .fas {
   color: white;
@@ -501,7 +503,7 @@ Slider
 }
 
 .alive {
-  visibility: visible;
+  visibility: visible; /*Hiển thị thành phần, đây là dạng mặc định.*/
 }
 .nav {
   position: absolute;

@@ -6,6 +6,7 @@
 		if ($(this).scrollTop() > 500) { 
             $('#back-to-top').fadeIn();//thực hiện lệnh điều kiện Khi lăn chuột xuống dưới 
             $("#back-to-top").css({
+                "visibility": "visible",
                 "opacity":"1",
                 "transition": "1s",
             })
@@ -13,6 +14,7 @@
 			 //Xuất hiện nút
 		} else { 
             $("#back-to-top").css({
+                "visibility": "hidden",
                 "opacity":"0",
                 "transition": "1s",
             })
@@ -75,39 +77,58 @@ $.global.total = 0;
 
 $(document).ready(function () {
 
-  var WindowWidth = $(window).width();
-  var SlideCount = $('#slides li').length;
-  var SlidesWidth = SlideCount * WindowWidth;
+  var WindowWidth = $(window).width();//Lấy kích thước màn hình theo chiều rộng
+  var SlideCount = $('#slides li').length;// lấy số phần tử li
+  console.log(SlideCount);
+  var SlidesWidth = SlideCount * WindowWidth;//
 
   $.global.item = 0;
-  $.global.total = SlideCount;
+  $.global.total = SlideCount;//3
 
-  $('.slide').css('width', WindowWidth + 'px');
-  $('#slides').css('width', SlidesWidth + 'px');
+  $('.slide').css(
+      'width', WindowWidth + 'px'
+      );//class .slide with width = WindowWidth
+  $('#slides').css(
+      'width', SlidesWidth + 'px'
+    );//id #slide with width = SlidesWidth
 
-  $("#slides li:nth-child(1)").addClass('alive');
+//   $("#slides li:nth-child(1)").addClass('alive');
 
-  $('#left').click(function () { Slide('back'); });
-  $('#right').click(function () { Slide('forward'); });
+  $('#left').click(function () { //click vào button left
+      Slide('back');
+ });
+  $('#right').click(function () { //click vào button right
+      Slide('forward');
+    });
 
 });
 
 function Slide(direction) {
 
-  if (direction == 'back') { var $target = $.global.item - 1; }
-  if (direction == 'forward') { var $target = $.global.item + 1; }
+  if (direction == 'back') { 
+      var $target = $.global.item - 1;
+ }
+  if (direction == 'forward') {
+       var $target = $.global.item + 1; 
+}
 
-  if ($target == -1) { DoIt($.global.total - 1); }
-  else if ($target == $.global.total) { DoIt(0); }
-  else { DoIt($target); }
+  if ($target == -1) {
+       DoIt($.global.total - 1);
+ }
+  else if ($target == $.global.total) {
+       DoIt(0); 
+ }
+  else {
+       DoIt($target); 
+    }
 
 
 }
 
 function DoIt(target) {
 
-  var $windowwidth = $(window).width();
-  var $margin = $windowwidth * target;
+  var $windowwidth = $(window).width();// lấy chiều rộng màn hình 
+  var $margin = $windowwidth * target; // 
   var $actualtarget = target + 1;
 
   $("#slides li:nth-child(" + $actualtarget + ")").addClass('alive');
@@ -171,7 +192,7 @@ $(window).scroll(function(e){
                 const count = + counter.innerText;
                 const inc = target / speed;
                 if (count < target) {
-                    counter.innerText = count + inc;
+                    counter.innerText = count + inc;``
                     setTimeout(updateCount, 1);
                 } else {
                     counter.innerText = target;
@@ -258,7 +279,7 @@ cdtimeline.add({
 
 /****Load**** */
  $(window).on('load', function(event) {
- 	$('body').removeClass('preloading');
+ 	$('body').removeClass('preloading'); // xóa class
 // 	// $('.load').delay(1000).fadeOut('fast');
  	$('.loader').delay(1200).fadeOut('fast');
  });
