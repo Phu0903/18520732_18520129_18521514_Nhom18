@@ -8,7 +8,7 @@ $(window).on('load', function(event) {
 });
 
  /******Back to top***** */
- /*$(document).ready(function(){ 
+ $(document).ready(function(){ 
 	$(window).scroll(function(){ 
      
 		if ($(this).scrollTop() > 500) { 
@@ -33,7 +33,7 @@ $(window).on('load', function(event) {
 		$("html, body").animate({ scrollTop: 0 }, 600); //Animation giúp hoạt ảnh scroll ngược lên đầu trang sẽ mượt hơn
 		return false; 
 	}); 
-});*/
+});
 //************Menu***************/
 
 $(window).scroll(function(e){
