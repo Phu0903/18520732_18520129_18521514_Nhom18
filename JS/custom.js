@@ -1,4 +1,12 @@
 /*JS Document */
+
+/****Load**** */
+$(window).on('load', function(event) {
+    $('body').removeClass('preloading'); // xóa class
+// 	// $('.load').delay(1000).fadeOut('fast');
+    $('.loader').delay(1200).fadeOut('fast');
+});
+
  /******Back to top***** */
  $(document).ready(function(){ 
 	$(window).scroll(function(){ 
@@ -277,12 +285,6 @@ cdtimeline.add({
 
 
 
-/****Load**** */
- $(window).on('load', function(event) {
- 	$('body').removeClass('preloading'); // xóa class
-// 	// $('.load').delay(1000).fadeOut('fast');
- 	$('.loader').delay(1200).fadeOut('fast');
- });
 
 
 
